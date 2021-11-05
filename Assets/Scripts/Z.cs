@@ -34,7 +34,7 @@ public class Z : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.right);
                 return;
             }
-            soundManager.PlayLeft();
+            SoundManager.PlayLeft();
 
 
         }
@@ -46,7 +46,7 @@ public class Z : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.left);
                 return;
             }
-            soundManager.PlayRight();
+            SoundManager.PlayRight();
 
         }
 
@@ -58,7 +58,7 @@ public class Z : Tetrimino, ITetrimino
                 Pivot.transform.Rotate(Vector3.forward, -90);
                 return;
             }
-            soundManager.PlayFlipUp();
+            SoundManager.PlayFlipUp();
 
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -71,7 +71,7 @@ public class Z : Tetrimino, ITetrimino
                 Pivot.transform.Rotate(Vector3.forward, 90);
                 return;
             }
-            soundManager.PlayFlipDown();
+            SoundManager.PlayFlipDown();
 
         }
 
@@ -84,7 +84,7 @@ public class Z : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.up);
                 return;
             }
-            soundManager.PlayDrop();
+            SoundManager.PlayDrop();
             //UpdateGrid();
         }
     }

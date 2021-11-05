@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ce74fb0-8cff-42a5-a146-54235d40f7b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/I.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/I.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/J.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/J.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/L.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/L.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/O.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/S.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/S.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/T.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/T.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Z.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Z.cs" afterDir="false" />
@@ -23,14 +25,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/I.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/J.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/L.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/O.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/S.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/T.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Z.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/I.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Z.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/T.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/S.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/O.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/L.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/J.cs" />
       </list>
     </option>
   </component>
@@ -73,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636149838323</updated>
       <workItem from="1636149851642" duration="881000" />
+      <workItem from="1636151647070" duration="205000" />
     </task>
     <servers />
   </component>
@@ -83,5 +86,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="115" y="125" width="1321" height="673" key="VCS.FileHistoryDialog" timestamp="1636151715721">
+      <screen x="0" y="25" width="1536" height="873" />
+    </state>
+    <state x="115" y="125" width="1321" height="673" key="VCS.FileHistoryDialog/0.25.1536.873@0.25.1536.873" timestamp="1636151715721" />
   </component>
 </project>

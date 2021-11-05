@@ -10,7 +10,7 @@ public enum TetriminoType
 public class Tetrimino : MonoBehaviour
 {
 
-    public SoundManager soundManager;
+   // public SoundManager soundManager;
     public TetriminoType Type;
     [Tooltip("Used for translation")]
     public GameObject Root;
@@ -99,7 +99,7 @@ public class Tetrimino : MonoBehaviour
                 --y;
                 GameMaster.rows += 1;
                 r = +1;
-                soundManager.PlayLineClear();
+                SoundManager.PlayLineClear();
             }
         } 
 

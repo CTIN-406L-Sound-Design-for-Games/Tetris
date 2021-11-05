@@ -38,7 +38,7 @@ public class I : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.right);
                 return;
             }
-            soundManager.PlayLeft();
+            SoundManager.PlayLeft();
             
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -49,7 +49,7 @@ public class I : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.left);
                 return;
             }
-            soundManager.PlayRight();
+            SoundManager.PlayRight();
         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -62,7 +62,7 @@ public class I : Tetrimino, ITetrimino
                     Pivot.transform.Rotate(Vector3.forward, -90);
                     return;
             }
-            soundManager.PlayFlipUp();
+            SoundManager.PlayFlipUp();
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -74,7 +74,7 @@ public class I : Tetrimino, ITetrimino
                 Pivot.transform.Rotate(Vector3.forward, 90);
                 return;
             }
-            soundManager.PlayFlipDown();
+            SoundManager.PlayFlipDown();
         }
 
         if (Input.GetKey(KeyCode.Space))
@@ -86,7 +86,7 @@ public class I : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.up);
                 return;
             }
-            soundManager.PlayDrop();
+            SoundManager.PlayDrop();
             //UpdateGrid();
         }
     }
