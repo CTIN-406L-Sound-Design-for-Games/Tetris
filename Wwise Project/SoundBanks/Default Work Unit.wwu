@@ -11,6 +11,7 @@
 						<ObjectRef Name="shape_right" ID="{E150FA7B-82C2-414B-A38B-16258C9C1584}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stage_3" ID="{937CA0A1-07D1-4200-B87B-8607F913669C}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="shape_left" ID="{982E6035-9B91-48DE-AD09-CC1A4C281A6E}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="game_start" ID="{373DB504-8DB2-499B-871D-16F474907360}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="game_win" ID="{FEEF6A2E-0FFF-4C75-B8E7-1430A5E703AC}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stage_2" ID="{BFA9F440-8CED-4E0E-BE92-3F693D4B8A57}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stage_1" ID="{F77470D4-EB03-4ED9-B86D-18B383194B01}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" Origin="Manual" Filter="7"/>

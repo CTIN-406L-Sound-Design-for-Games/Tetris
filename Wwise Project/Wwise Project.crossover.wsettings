@@ -3,6 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{416836FE-8B41-4EB6-BE85-EB649DF24A1D}">
 			<PropertyList>
+				<Property Name="Event Action List\{373DB504-8DB2-499B-871D-16F474907360}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3E7D9167-9E7E-4FEF-82B3-76862E4EB53F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6DD5F201-36F7-4093-B56D-CFEB6A810CDA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8976E03E-84A7-4067-A115-303864BA0177}\x64_Expand States" Type="string" Value=""/>

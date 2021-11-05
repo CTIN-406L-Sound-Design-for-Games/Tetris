@@ -10,7 +10,7 @@ public enum TetriminoType
 public class Tetrimino : MonoBehaviour
 {
 
-   // public SoundManager soundManager;
+    // public SoundManager soundManager;
     public TetriminoType Type;
     [Tooltip("Used for translation")]
     public GameObject Root;
@@ -18,7 +18,7 @@ public class Tetrimino : MonoBehaviour
     [Tooltip("Used for rotation")]
     public GameObject Pivot;
     public static int width = 10;
-    public  int height = 20;
+    public int height = 20;
 
     [SerializeField]
     public GameObject[] cubes = new GameObject[4];
@@ -26,7 +26,7 @@ public class Tetrimino : MonoBehaviour
 
 
     // Start is called before the first frame update
-   
+
 
     //public static GameObject[,] grid = new GameObject[width, height];
 
@@ -45,7 +45,7 @@ public class Tetrimino : MonoBehaviour
 
 
 
-    public  bool IsToRight(Vector3 pos)
+    public bool IsToRight(Vector3 pos)
     {
         return ((int)pos.x >= 0 && (int)pos.x > width - 1 && (int)pos.y >= 0);
     }
@@ -71,7 +71,7 @@ public class Tetrimino : MonoBehaviour
         }
     }
 
-    public  void Delete(int y)
+    public void Delete(int y)
     {
         for (int x = 0; x < width; x++)
         {
@@ -79,7 +79,7 @@ public class Tetrimino : MonoBehaviour
             GameMaster.grid[x, y] = null;
         }
     }
-    public  bool IsFull(int y)
+    public bool IsFull(int y)
     {
         for (int x = 0; x < width; x++)
             if (GameMaster.grid[x, y] == null)
@@ -101,28 +101,32 @@ public class Tetrimino : MonoBehaviour
                 r = +1;
                 SoundManager.PlayLineClear();
             }
-        } 
+        }
 
-        if(r == 1)
+        if (r == 1)
         {
             GameMaster.score += 40 * (GameMaster.level + 1);
+            AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
         }
         if (r == 2)
         {
             GameMaster.score += 100 * (GameMaster.level + 1);
+            AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
         }
         if (r == 3)
         {
             GameMaster.score += 300 * (GameMaster.level + 1);
+            AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
         }
         if (r == 4)
         {
             GameMaster.score += 1200 * (GameMaster.level + 1);
+            AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
         }
         //UpdateGrid();
     }
 
-    public  void RowDown(int y)
+    public void RowDown(int y)
     {
         for (int x = 0; x < width; x++)
         {
@@ -135,7 +139,7 @@ public class Tetrimino : MonoBehaviour
         }
     }
 
-    public  void RowDownAll(int y)
+    public void RowDownAll(int y)
     {
         for (int i = y; i < height; i++)
             RowDown(i);

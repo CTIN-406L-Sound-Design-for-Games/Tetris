@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/Ghazal/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GITHUB/Tetris/Wwise Project/</ProjectRoot>
-		<SourceFilesRoot>/Users/Ghazal/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GITHUB/Tetris/Wwise Project/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/Ghazal/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GITHUB/Tetris/Wwise Project/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/Tetris/Wwise Project/</ProjectRoot>
+		<SourceFilesRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/Tetris/Wwise Project/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/Tetris/Wwise Project/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/Ghazal/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GITHUB/Tetris/Wwise Project/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/Tetris/Wwise Project/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="268540612">
+		<SoundBank Id="1355168291" Language="SFX" Hash="537370772">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="333128935">
+		<SoundBank Id="3052682920" Language="SFX" Hash="690505511">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
@@ -25,7 +25,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -33,7 +33,15 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="0.104440" DurationMax="0.104440">
+					<IncludedMemoryFiles>
+						<File Id="558075618" Language="SFX">
+							<ShortName>temp.wav</ShortName>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,7 +49,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -49,7 +57,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -57,7 +65,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -65,7 +73,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -73,7 +81,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -81,7 +89,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -89,7 +97,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -97,7 +105,7 @@
 					<IncludedMemoryFiles>
 						<File Id="558075618" Language="SFX">
 							<ShortName>temp.wav</ShortName>
-							<Path>SFX/temp_88C2B05B.wem</Path>
+							<Path>SFX/temp_A04F983C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

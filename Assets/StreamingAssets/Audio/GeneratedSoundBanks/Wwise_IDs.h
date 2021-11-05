@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CLEAR_ROW = 1870373793U;
         static const AkUniqueID GAME_LOSE = 3425053597U;
+        static const AkUniqueID GAME_START = 733168346U;
         static const AkUniqueID GAME_WIN = 3218375656U;
         static const AkUniqueID SHAPE_FLIP = 3205476178U;
         static const AkUniqueID SHAPE_LAND = 597916644U;

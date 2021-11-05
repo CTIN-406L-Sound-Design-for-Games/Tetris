@@ -19,7 +19,7 @@ public class GameMaster : MonoBehaviour
     [HideInInspector]
     public GameObject nextTetriminoFalling = null;
     public static GameObject[,] grid = new GameObject[width, height];
-    
+
     [Header("UI Data Management")]
     public static int rows = 0;
     public static int score = 0;
@@ -30,7 +30,7 @@ public class GameMaster : MonoBehaviour
     public int rowsStage3 = 10;
     private int rowsUpdate = 0;
     private int stageRows = 0;
-    
+
     [Header("UI Texts")]
     public Text hud_score;
     public Text hud_level;
@@ -38,11 +38,11 @@ public class GameMaster : MonoBehaviour
     public Text hud_stageRows;
     public Text hud_stage;
 
-    [Header("Particle Effects")] 
+    [Header("Particle Effects")]
     public GameObject stage1Effect;
     public GameObject stage2Effect;
     public GameObject stage3Effect;
-    
+
 
     [HideInInspector]
     public GameObject NextTetrimino;
@@ -61,6 +61,7 @@ public class GameMaster : MonoBehaviour
     {
 
         coolOffTime = 0.0f;
+        AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
 
         //currentTetriminoFalling = SpawnNextTetrimino();
 
@@ -130,7 +131,7 @@ public class GameMaster : MonoBehaviour
 
         return NextTetrimino;
     }
-    
+
 
     public bool CheckIsValidPosition()
     {
@@ -149,9 +150,9 @@ public class GameMaster : MonoBehaviour
 
     public bool CheckIsAboveGrid(GameObject tetrimino)
     {
-        for(int x = 0; x < width; x++)
+        for (int x = 0; x < width; x++)
         {
-            foreach(GameObject cube in FindObjectOfType<Tetrimino>().cubes)
+            foreach (GameObject cube in FindObjectOfType<Tetrimino>().cubes)
             {
                 Vector2 v = Tetrimino.RoundVector(cube.transform.position);
                 if ((int)v.y > height - 1)
@@ -163,10 +164,10 @@ public class GameMaster : MonoBehaviour
 
     public void GameInfoUpdate()
     {
-        
+
         //Debug.Log("Score = " + score);
         hud_score.text = score.ToString();
-        level = (rows / 10)+ 1;
+        level = (rows / 10) + 1;
         //Debug.Log("Level = " + level);
         hud_level.text = level.ToString();
 
@@ -174,18 +175,18 @@ public class GameMaster : MonoBehaviour
         {
             stage1Effect.SetActive(true);
             stage = 2;
-            
+
         }
-        if (rows >= rowsStage1+rowsStage2)
+        if (rows >= rowsStage1 + rowsStage2)
         {
             stage2Effect.SetActive(true);
             stage = 3;
         }
-        if (rows >= rowsStage1+rowsStage2+rowsStage3)
+        if (rows >= rowsStage1 + rowsStage2 + rowsStage3)
         {
             stage3Effect.SetActive(true);
-           //You Win
-           StartCoroutine(GameWin());
+            //You Win
+            StartCoroutine(GameWin());
         }
 
         if (stage == 1)
@@ -204,7 +205,7 @@ public class GameMaster : MonoBehaviour
         if (stage == 3)
         {
             rowsUpdate = rows;
-            rowsUpdate -= (rowsStage1+rowsStage2);
+            rowsUpdate -= (rowsStage1 + rowsStage2);
             stageRows = rowsStage3;
         }
         hud_stage.text = stage.ToString();

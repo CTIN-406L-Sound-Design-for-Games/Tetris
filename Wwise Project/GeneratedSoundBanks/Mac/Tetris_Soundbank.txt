@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	597916644	shape_land			\Default Work Unit\shape_land	
+	733168346	game_start			\Default Work Unit\game_start	
 	1269712800	shape_left			\Default Work Unit\shape_left	
 	1870373793	clear_row			\Default Work Unit\clear_row	
 	3205476178	shape_flip			\Default Work Unit\shape_flip	
@@ -11,5 +12,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	4175426383	stage_3			\Default Work Unit\stage_3	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	558075618	temp	Y:\Documents\GITHUB\Tetris\Wwise Project\.cache\Mac\SFX\temp_88C2B05B.wem		\Actor-Mixer Hierarchy\Default Work Unit\temp		13448
+	558075618	temp	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\temp_A04F983C.wem		\Actor-Mixer Hierarchy\Default Work Unit\temp		13448
 
