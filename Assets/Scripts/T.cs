@@ -33,8 +33,9 @@ public class T : Tetrimino, ITetrimino
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
                 Root.transform.Translate(Vector3.right);
+                return;
             }
-
+            soundManager.PlayLeft();
 
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -43,7 +44,9 @@ public class T : Tetrimino, ITetrimino
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
                 Root.transform.Translate(Vector3.left);
+                return;
             }
+            soundManager.PlayRight();
 
         }
 
@@ -53,7 +56,9 @@ public class T : Tetrimino, ITetrimino
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
                 Pivot.transform.Rotate(Vector3.forward, -90);
+                return;
             }
+            soundManager.PlayFlipUp();
 
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -64,8 +69,9 @@ public class T : Tetrimino, ITetrimino
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
                 Pivot.transform.Rotate(Vector3.forward, 90);
-
+                return;
             }
+            soundManager.PlayFlipDown();
 
         }
 
@@ -76,8 +82,9 @@ public class T : Tetrimino, ITetrimino
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
                 Root.transform.Translate(Vector3.up);
-
+                return;
             }
+            soundManager.PlayDrop();
             //UpdateGrid();
         }
     }
