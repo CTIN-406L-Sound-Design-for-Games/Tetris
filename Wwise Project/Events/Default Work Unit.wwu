@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="shape_flip" ID="{6DD5F201-36F7-4093-B56D-CFEB6A810CDA}">
+					<ChildrenList>
+						<Action Name="" ID="{1276F50F-D467-4794-AFBD-3AD7B5659675}" ShortID="1044393482">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_land" ID="{3E7D9167-9E7E-4FEF-82B3-76862E4EB53F}">
+					<ChildrenList>
+						<Action Name="" ID="{58888925-4E61-4A61-AE11-36897737A87E}" ShortID="41702424">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_left" ID="{982E6035-9B91-48DE-AD09-CC1A4C281A6E}">
+					<ChildrenList>
+						<Action Name="" ID="{F7192105-74AB-4CD3-B8C8-804A5433DFF4}" ShortID="308143537">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp_left" ID="{B74FCA71-181F-4E3C-B6BE-381C5051CE21}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_right" ID="{E150FA7B-82C2-414B-A38B-16258C9C1584}">
+					<ChildrenList>
+						<Action Name="" ID="{2801EF17-98FD-4D4A-9DD5-07319BCD2EF9}" ShortID="910211341">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp_right" ID="{4BDE3844-3115-40F4-BD96-48D6EFAE9313}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="clear_row" ID="{8976E03E-84A7-4067-A115-303864BA0177}">
+					<ChildrenList>
+						<Action Name="" ID="{276020DE-5ED2-4769-80C0-58560085F624}" ShortID="198995297">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_1" ID="{F77470D4-EB03-4ED9-B86D-18B383194B01}">
+					<ChildrenList>
+						<Action Name="" ID="{B5AA95A6-95D5-47C1-B047-54EBD9D9130E}" ShortID="873860216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_2" ID="{BFA9F440-8CED-4E0E-BE92-3F693D4B8A57}">
+					<ChildrenList>
+						<Action Name="" ID="{7CEC9D7C-AF8A-4B40-85D0-A33CF962DBE7}" ShortID="946050238">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_3" ID="{937CA0A1-07D1-4200-B87B-8607F913669C}">
+					<ChildrenList>
+						<Action Name="" ID="{37BE6E93-7540-48F1-8444-CAD959877BC5}" ShortID="429777967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_win" ID="{FEEF6A2E-0FFF-4C75-B8E7-1430A5E703AC}">
+					<ChildrenList>
+						<Action Name="" ID="{7C5BA841-93F6-4ABC-B556-D3B2E9A74A70}" ShortID="805315796">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_lose" ID="{A311C9FA-343C-40AC-81C6-C9904201BADB}">
+					<ChildrenList>
+						<Action Name="" ID="{53D564DE-33BF-4434-A91F-1567B1CC026C}" ShortID="883359311">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

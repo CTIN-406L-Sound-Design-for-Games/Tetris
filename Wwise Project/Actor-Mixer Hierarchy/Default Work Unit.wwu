@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="temp_left" ID="{B74FCA71-181F-4E3C-B6BE-381C5051CE21}" ShortID="815890541">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{59610F16-BD7D-4EFC-BFF2-7E75E7BE3EA4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{208994AB-AA5E-49FD-A896-32FF49E8105C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="temp" ID="{A0A2C270-2F50-45D6-B8E2-341F315B2ECF}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>temp.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="558075618"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="temp" ID="{A0A2C270-2F50-45D6-B8E2-341F315B2ECF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="temp_right" ID="{4BDE3844-3115-40F4-BD96-48D6EFAE9313}" ShortID="754616904">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>500</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{59610F16-BD7D-4EFC-BFF2-7E75E7BE3EA4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{208994AB-AA5E-49FD-A896-32FF49E8105C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="temp" ID="{47CC19C0-4EB7-4CF8-B07E-E1C613EC8261}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>temp.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="558075618"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="temp" ID="{47CC19C0-4EB7-4CF8-B07E-E1C613EC8261}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" ShortID="1492864">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>500</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{59610F16-BD7D-4EFC-BFF2-7E75E7BE3EA4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{208994AB-AA5E-49FD-A896-32FF49E8105C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="temp" ID="{912F312E-C3F2-485C-B5E7-E2B250D096BF}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>temp.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="558075618"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="temp" ID="{912F312E-C3F2-485C-B5E7-E2B250D096BF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
