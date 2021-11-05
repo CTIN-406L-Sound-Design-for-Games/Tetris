@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 3abf3fb20c60e948ab1bf4f30ef84b2b
     GuidInternal: 
-    m_lastTime: -8585654553354775808
+    m_lastTime: -8585654540184775808
     List:
     - name: Tetris_Soundbank
       guid: cbd1c0094ae08a43a3e96efa068e1e69
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: fe4b4def3b6ab142ae5ed63c986c48e6
     GuidInternal: 
-    m_lastTime: -8585654553354775808
+    m_lastTime: -8585654540264775808
     List:
     - name: clear_row
       guid: 3ee07689a7846740a115303864ba0177
@@ -127,6 +127,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: fac911a33c34ac4081c6c9904201badb
       Path: Events/Default Work Unit/game_lose
+      maxAttenuation: 0
+      maxDuration: 0.10444
+      minDuration: 0.10444
+    - name: game_start
+      guid: 04b53d37b28d9b49871d16f474907360
+      id: 733168346
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fe4b4def3b6ab142ae5ed63c986c48e6
+      - ElementName: game_start
+        ObjectType: 3
+        guid: 04b53d37b28d9b49871d16f474907360
+      Path: Events/Default Work Unit/game_start
       maxAttenuation: 0
       maxDuration: 0.10444
       minDuration: 0.10444
@@ -278,7 +295,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 615d4f229ba5854fa11a5d15d69932b1
     GuidInternal: 
-    m_lastTime: -8585654553354775808
+    m_lastTime: -8585654537484775808
     List:
     - name: hieght
       guid: 04f7bb46d44e6b4aba9839b5a2a113a0
@@ -350,7 +367,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585654571804775808
     List: []
-  ExpandedFileSystemItemIds: 1200000013000000
+  ExpandedFileSystemItemIds: 02000000030000001200000013000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
