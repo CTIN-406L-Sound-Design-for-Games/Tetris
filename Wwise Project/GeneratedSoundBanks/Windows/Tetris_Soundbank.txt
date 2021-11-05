@@ -11,5 +11,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	4175426383	stage_3			\Default Work Unit\stage_3	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	558075618	temp	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Windows\SFX\temp_A04F983C.wem		\Actor-Mixer Hierarchy\Default Work Unit\temp		13448
+	558075618	temp	Y:\Documents\GITHUB\Tetris\Wwise Project\.cache\Windows\SFX\temp_88C2B05B.wem		\Actor-Mixer Hierarchy\Default Work Unit\temp		13448
 
