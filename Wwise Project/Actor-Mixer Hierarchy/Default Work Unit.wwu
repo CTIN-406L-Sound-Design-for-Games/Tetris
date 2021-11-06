@@ -13,22 +13,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="temp" ID="{A0A2C270-2F50-45D6-B8E2-341F315B2ECF}">
+						<SourcePlugin Name="Wwise Sine" ID="{5D061513-483A-4F98-8C83-A9FF16D87942}" ShortID="971023863" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="SineDuration" Type="Real32" Value="0.1"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>temp.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="558075618"/>
-							</MediaIDList>
-						</AudioFileSource>
+						</SourcePlugin>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="temp" ID="{A0A2C270-2F50-45D6-B8E2-341F315B2ECF}" Platform="Linked"/>
+						<ActiveSource Name="Wwise Sine" ID="{5D061513-483A-4F98-8C83-A9FF16D87942}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="temp_right" ID="{4BDE3844-3115-40F4-BD96-48D6EFAE9313}" ShortID="754616904">
@@ -48,22 +42,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="temp" ID="{47CC19C0-4EB7-4CF8-B07E-E1C613EC8261}">
+						<SourcePlugin Name="Wwise Sine" ID="{9C7FBC5B-57B8-4FCA-BA7B-6C46D5D6F3FE}" ShortID="869014346" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="SineDuration" Type="Real32" Value="0.1"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>temp.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="558075618"/>
-							</MediaIDList>
-						</AudioFileSource>
+						</SourcePlugin>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="temp" ID="{47CC19C0-4EB7-4CF8-B07E-E1C613EC8261}" Platform="Linked"/>
+						<ActiveSource Name="Wwise Sine" ID="{9C7FBC5B-57B8-4FCA-BA7B-6C46D5D6F3FE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="temp" ID="{F62998DA-F86B-42F1-9DA8-9551AC6C387D}" ShortID="1492864">
@@ -83,22 +71,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="temp" ID="{912F312E-C3F2-485C-B5E7-E2B250D096BF}">
+						<SourcePlugin Name="Wwise Sine" ID="{7132C7C2-562A-4CB5-BB3B-9990489F1D7F}" ShortID="520727909" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0.161193538647343"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.161193538647343"/>
+								<Property Name="SineDuration" Type="Real32" Value="0.1"/>
 							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>temp.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="558075618"/>
-							</MediaIDList>
-						</AudioFileSource>
+						</SourcePlugin>
 					</ChildrenList>
 					<ObjectLists/>
 					<ActiveSourceList>
-						<ActiveSource Name="temp" ID="{912F312E-C3F2-485C-B5E7-E2B250D096BF}" Platform="Linked"/>
+						<ActiveSource Name="Wwise Sine" ID="{7132C7C2-562A-4CB5-BB3B-9990489F1D7F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -151,8 +151,6 @@ public class GameMaster : MonoBehaviour
     public void CheckMaximumHeightRemaining()
     {
         int tempHeight = 0;
-
-
         foreach (GameObject tetrimino in GameObject.FindGameObjectsWithTag("Tetrimino"))
         {
             //Debug.Log("tetrimino.name: " + tetrimino.name);
@@ -164,16 +162,14 @@ public class GameMaster : MonoBehaviour
                 if ((int)v.y > tempHeight)
                 {
                     tempHeight = (int)v.y;
-                    AkSoundEngine.SetRTPCValue("height", GameMaster.score, GameObject.Find("WwiseGlobal"));
-                    //Debug.Log("height: " + tempHeight);
                 }
 
                 if (maxHeight != tempHeight)
                 {
                     maxHeight = tempHeight;
-                    AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+                    AkSoundEngine.SetRTPCValue("height", GameMaster.score, GameObject.Find("WwiseGlobal"));
 
-                    //Debug.Log("maxHeight: " + maxHeight);
+                    Debug.Log("maxHeight: " + maxHeight);
                 }
             }
         }
