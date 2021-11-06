@@ -252,12 +252,15 @@ public class GameMaster : MonoBehaviour
 
     public void GameOver()
     {
+        AkSoundEngine.PostEvent("game_lose", GameObject.Find("WwiseGlobal"));
+
         SceneManager.LoadScene("GameOver");
 
     }
 
     IEnumerator GameWin()
     {
+        AkSoundEngine.PostEvent("game_win", GameObject.Find("WwiseGlobal"));
         yield return new WaitForSeconds(1.5f);
         //SceneManager.UnloadSceneAsync("GamePlay");
         SceneManager.LoadScene("GameOver_WIN");
