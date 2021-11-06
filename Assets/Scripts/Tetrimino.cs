@@ -20,9 +20,10 @@ public class Tetrimino : MonoBehaviour
     public static int width = 10;
     public int height = 20;
 
+    public bool isActive = true;
+
     [SerializeField]
     public GameObject[] cubes = new GameObject[4];
-
 
 
     // Start is called before the first frame update

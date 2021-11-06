@@ -29,6 +29,8 @@ public class GameMaster : MonoBehaviour
     public int rowsStage2 = 10;
     public int rowsStage3 = 10;
     private int rowsUpdate = 0;
+
+    private int maxHeight = 0;
     private int stageRows = 0;
 
     [Header("UI Texts")]
@@ -73,19 +75,16 @@ public class GameMaster : MonoBehaviour
         if (coolOffTime < Time.time)
         {
             // instantiate a new tetrimino and move it down ...
-            if (currentTetriminoFalling == null || currentTetriminoFalling.GetComponent<Tetrimino>().enabled == false)
+            if (currentTetriminoFalling == null || currentTetriminoFalling.GetComponent<Tetrimino>().isActive == false)
             {
-
-
                 currentTetriminoFalling = SpawnNextTetrimino();
-
-
+                currentTetriminoFalling.GetComponent<Tetrimino>().isActive = true;
             }
         }
 
         if (coolOffTime < Time.time)
         {
-            if (currentTetriminoFalling.GetComponent<Tetrimino>().enabled)
+            if (currentTetriminoFalling.GetComponent<Tetrimino>().isActive)
             {
 
                 currentTetriminoFalling.transform.Translate(Vector3.down);
@@ -94,7 +93,7 @@ public class GameMaster : MonoBehaviour
                 if (!CheckIsValidPosition())
                 {
                     currentTetriminoFalling.transform.Translate(Vector3.up);
-                    currentTetriminoFalling.GetComponent<Tetrimino>().enabled = false;
+                    currentTetriminoFalling.GetComponent<Tetrimino>().isActive = false;
                     if (CheckIsAboveGrid(currentTetriminoFalling))
                     {
                         GameOver();
@@ -114,6 +113,7 @@ public class GameMaster : MonoBehaviour
             }
             coolOffTime = Time.time + speed;
             Speed();
+            CheckMaximumHeightRemaining();
 
         }
 
@@ -127,7 +127,7 @@ public class GameMaster : MonoBehaviour
                         new Vector3(5, 20, 0),
                         Quaternion.identity) as GameObject;
 
-        Debug.Log(NextTetrimino.GetComponent<ITetrimino>().GetType());
+        //Debug.Log(NextTetrimino.GetComponent<ITetrimino>().GetType());
 
         return NextTetrimino;
     }
@@ -146,6 +146,35 @@ public class GameMaster : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void CheckMaximumHeightRemaining()
+    {
+        int tempHeight = 0;
+
+
+        foreach (GameObject tetrimino in GameObject.FindGameObjectsWithTag("Tetrimino"))
+        {
+            //Debug.Log("tetrimino.name: " + tetrimino.name);
+            if (tetrimino.GetComponent<Tetrimino>().isActive == false)
+            {
+                Vector2 v = Tetrimino.RoundVector(tetrimino.transform.position);
+
+                //Debug.Log("height: " + (int)v.y);
+                if ((int)v.y > tempHeight)
+                {
+                    tempHeight = (int)v.y;
+                }
+
+                if (maxHeight != tempHeight)
+                {
+                    maxHeight = tempHeight;
+                    AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+                    Debug.Log("maxHeight: " + maxHeight);
+                }
+            }
+        }
+
     }
 
     public bool CheckIsAboveGrid(GameObject tetrimino)

@@ -19,7 +19,10 @@ public class J : Tetrimino, ITetrimino
     // Update is called once per frame
     void Update()
     {
-        CheckForUserInput();
+        if (isActive)
+        {
+            CheckForUserInput();
+        }
         //UpdateGrid();
 
     }
@@ -37,7 +40,7 @@ public class J : Tetrimino, ITetrimino
                 return;
             }
             SoundManager.PlayLeft();
-            
+
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {

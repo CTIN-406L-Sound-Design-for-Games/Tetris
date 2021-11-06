@@ -21,7 +21,10 @@ public class I : Tetrimino, ITetrimino
     // Update is called once per frame
     void Update()
     {
-        CheckForUserInput();
+        if (isActive)
+        {
+            CheckForUserInput();
+        }
         //UpdateGrid();
         //FindObjectOfType<GameMaster>().UpdateGrid();
 
@@ -39,7 +42,7 @@ public class I : Tetrimino, ITetrimino
                 return;
             }
             SoundManager.PlayLeft();
-            
+
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -56,11 +59,11 @@ public class I : Tetrimino, ITetrimino
         {
             Pivot.transform.Rotate(Vector3.forward, 90);
 
-        
+
             if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
             {
-                    Pivot.transform.Rotate(Vector3.forward, -90);
-                    return;
+                Pivot.transform.Rotate(Vector3.forward, -90);
+                return;
             }
             SoundManager.PlayFlipUp();
         }

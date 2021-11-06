@@ -18,7 +18,10 @@ public class L : Tetrimino, ITetrimino
     // Update is called once per frame
     void Update()
     {
-        CheckForUserInput();
+        if (isActive)
+        {
+            CheckForUserInput();
+        }
         //UpdateGrid();
 
     }

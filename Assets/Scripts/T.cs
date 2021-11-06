@@ -7,7 +7,7 @@ public class T : Tetrimino, ITetrimino
     // Start is called before the first frame update
     void Start()
     {
-       
+
     }
 
     TetriminoType ITetrimino.GetType()
@@ -18,7 +18,10 @@ public class T : Tetrimino, ITetrimino
     // Update is called once per frame
     void Update()
     {
-        CheckForUserInput();
+        if (isActive)
+        {
+            CheckForUserInput();
+        }
         //UpdateGrid();
 
     }
