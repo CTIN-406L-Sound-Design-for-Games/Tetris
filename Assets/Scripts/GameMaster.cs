@@ -64,7 +64,7 @@ public class GameMaster : MonoBehaviour
 
         coolOffTime = 0.0f;
         AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
-
+        SoundManager.PlayStage1();
         //currentTetriminoFalling = SpawnNextTetrimino();
 
     }
@@ -164,13 +164,16 @@ public class GameMaster : MonoBehaviour
                 if ((int)v.y > tempHeight)
                 {
                     tempHeight = (int)v.y;
+                    AkSoundEngine.SetRTPCValue("height", GameMaster.score, GameObject.Find("WwiseGlobal"));
+                    //Debug.Log("height: " + tempHeight);
                 }
 
                 if (maxHeight != tempHeight)
                 {
                     maxHeight = tempHeight;
                     AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
-                    Debug.Log("maxHeight: " + maxHeight);
+
+                    //Debug.Log("maxHeight: " + maxHeight);
                 }
             }
         }
@@ -204,12 +207,13 @@ public class GameMaster : MonoBehaviour
         {
             stage1Effect.SetActive(true);
             stage = 2;
-
+            SoundManager.PlayStage2();
         }
         if (rows >= rowsStage1 + rowsStage2)
         {
             stage2Effect.SetActive(true);
             stage = 3;
+            SoundManager.PlayStage3();
         }
         if (rows >= rowsStage1 + rowsStage2 + rowsStage3)
         {
@@ -251,6 +255,7 @@ public class GameMaster : MonoBehaviour
             {
                 Vector2 v = Tetrimino.RoundVector(cube.transform.position);
                 if (v.y > height - 1)
+                    // SoundManager.PlayGameOver();
                     GameOver();
             }
         }
