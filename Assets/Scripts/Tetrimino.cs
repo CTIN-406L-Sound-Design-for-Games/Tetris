@@ -108,21 +108,29 @@ public class Tetrimino : MonoBehaviour
         {
             GameMaster.score += 40 * (GameMaster.level + 1);
             AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+            Debug.Log("RTPC Value Score ");
+
         }
         if (r == 2)
         {
             GameMaster.score += 100 * (GameMaster.level + 1);
             AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+            Debug.Log("RTPC Value Score ");
+
         }
         if (r == 3)
         {
             GameMaster.score += 300 * (GameMaster.level + 1);
             AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+            Debug.Log("RTPC Value Score ");
+
         }
         if (r == 4)
         {
             GameMaster.score += 1200 * (GameMaster.level + 1);
             AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+            Debug.Log("RTPC Value Score ");
+
         }
         //UpdateGrid();
     }

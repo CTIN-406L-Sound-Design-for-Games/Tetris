@@ -64,6 +64,7 @@ public class GameMaster : MonoBehaviour
 
         coolOffTime = 0.0f;
         AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
+        Debug.Log("RTPC Value Score ");
         SoundManager.PlayStage1();
         //currentTetriminoFalling = SpawnNextTetrimino();
 
@@ -168,7 +169,7 @@ public class GameMaster : MonoBehaviour
                 {
                     maxHeight = tempHeight;
                     AkSoundEngine.SetRTPCValue("height", GameMaster.score, GameObject.Find("WwiseGlobal"));
-
+                    Debug.Log("RTPC Value height");
                     Debug.Log("maxHeight: " + maxHeight);
                 }
             }
@@ -283,6 +284,7 @@ public class GameMaster : MonoBehaviour
     public void GameOver()
     {
         AkSoundEngine.PostEvent("game_lose", GameObject.Find("WwiseGlobal"));
+        Debug.Log("Playing game_lose event ");
 
         SceneManager.LoadScene("GameOver");
 
@@ -291,6 +293,7 @@ public class GameMaster : MonoBehaviour
     IEnumerator GameWin()
     {
         AkSoundEngine.PostEvent("game_win", GameObject.Find("WwiseGlobal"));
+        Debug.Log("Playing game_win event ");
         yield return new WaitForSeconds(1.5f);
         //SceneManager.UnloadSceneAsync("GamePlay");
         SceneManager.LoadScene("GameOver_WIN");
