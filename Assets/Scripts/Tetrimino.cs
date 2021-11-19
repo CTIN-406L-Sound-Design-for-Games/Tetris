@@ -53,6 +53,8 @@ public class Tetrimino : MonoBehaviour
 
     public void UpdateGrid()
     {
+        
+        
         for (int y = 0; y < height; ++y)
         {
             for (int x = 0; x < width; ++x)
@@ -62,6 +64,8 @@ public class Tetrimino : MonoBehaviour
                         GameMaster.grid[x, y] = null;
             }
         }
+        
+        
 
         foreach (GameObject cube in FindObjectOfType<Tetrimino>().cubes)
         {

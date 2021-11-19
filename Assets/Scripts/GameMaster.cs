@@ -8,20 +8,16 @@ using Random = UnityEngine.Random;
 
 public class GameMaster : MonoBehaviour
 {
-    [Header("Tetrimino")]
-    public GameObject[] TetriminoPrefabs;
+    [Header("Tetrimino")] public GameObject[] TetriminoPrefabs;
     public static int height = 20;
     public static int width = 10;
     public float speed = 1.0f;
     public float coolOffTime;
-    [HideInInspector]
-    public GameObject currentTetriminoFalling = null;
-    [HideInInspector]
-    public GameObject nextTetriminoFalling = null;
+    [HideInInspector] public GameObject currentTetriminoFalling = null;
+    [HideInInspector] public GameObject nextTetriminoFalling = null;
     public static GameObject[,] grid = new GameObject[width, height];
 
-    [Header("UI Data Management")]
-    public static int rows = 0;
+    [Header("UI Data Management")] public static int rows = 0;
     public static int score = 0;
     public static int level = 1;
     public int stage = 1;
@@ -33,25 +29,20 @@ public class GameMaster : MonoBehaviour
     private int maxHeight = 0;
     private int stageRows = 0;
 
-    [Header("UI Texts")]
-    public Text hud_score;
+    [Header("UI Texts")] public Text hud_score;
     public Text hud_level;
     public Text hud_rows;
     public Text hud_stageRows;
     public Text hud_stage;
 
-    [Header("Particle Effects")]
-    public GameObject stage1Effect;
+    [Header("Particle Effects")] public GameObject stage1Effect;
     public GameObject stage2Effect;
     public GameObject stage3Effect;
 
 
-    [HideInInspector]
-    public GameObject NextTetrimino;
-    [HideInInspector]
-    public GameObject PreviewTetrimino;
-    [HideInInspector]
-    public bool gameStarted = false;
+    [HideInInspector] public GameObject NextTetrimino;
+    [HideInInspector] public GameObject PreviewTetrimino;
+    [HideInInspector] public bool gameStarted = false;
 
     private void Awake()
     {
@@ -61,13 +52,11 @@ public class GameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         coolOffTime = 0.0f;
         AkSoundEngine.SetRTPCValue("score", GameMaster.score, GameObject.Find("WwiseGlobal"));
         Debug.Log("RTPC Value Score ");
         SoundManager.PlayStage1();
         //currentTetriminoFalling = SpawnNextTetrimino();
-
     }
 
     // Update is called once per frame
@@ -75,9 +64,12 @@ public class GameMaster : MonoBehaviour
     {
         if (coolOffTime < Time.time)
         {
+            
+
             // instantiate a new tetrimino and move it down ...
             if (currentTetriminoFalling == null || currentTetriminoFalling.GetComponent<Tetrimino>().isActive == false)
             {
+                
                 currentTetriminoFalling = SpawnNextTetrimino();
                 currentTetriminoFalling.GetComponent<Tetrimino>().isActive = true;
             }
@@ -87,12 +79,16 @@ public class GameMaster : MonoBehaviour
         {
             if (currentTetriminoFalling.GetComponent<Tetrimino>().isActive)
             {
-
                 currentTetriminoFalling.transform.Translate(Vector3.down);
-
+                
 
                 if (!CheckIsValidPosition())
                 {
+                    if (Input.GetKey(KeyCode.Space))
+                    {
+                        SoundManager.PlayDrop();
+                        //Debug.Log("Space");
+                    }
                     currentTetriminoFalling.transform.Translate(Vector3.up);
                     currentTetriminoFalling.GetComponent<Tetrimino>().isActive = false;
                     if (CheckIsAboveGrid(currentTetriminoFalling))
@@ -103,30 +99,25 @@ public class GameMaster : MonoBehaviour
                     GetComponent<Tetrimino>().UpdateGrid();
                     GetComponent<Tetrimino>().DeleteRow();
                     GameInfoUpdate();
-
-
                 }
                 else
                 {
-
                 }
-
             }
+
             coolOffTime = Time.time + speed;
             Speed();
             CheckMaximumHeightRemaining();
-
         }
-
-
     }
 
     GameObject SpawnNextTetrimino()
     {
+        
         GameObject NextTetrimino = GameObject.Instantiate(
-                        TetriminoPrefabs[Random.Range(0, TetriminoPrefabs.Length)],
-                        new Vector3(5, 20, 0),
-                        Quaternion.identity) as GameObject;
+            TetriminoPrefabs[Random.Range(0, TetriminoPrefabs.Length)],
+            new Vector3(5, 20, 0),
+            Quaternion.identity) as GameObject;
 
         //Debug.Log(NextTetrimino.GetComponent<ITetrimino>().GetType());
 
@@ -142,7 +133,8 @@ public class GameMaster : MonoBehaviour
 
             if (!Tetrimino.IsInsideBorder(v))
                 return false;
-            if (grid[(int)v.x, (int)v.y] != null && grid[(int)v.x, (int)v.y].transform.parent.parent != currentTetriminoFalling.transform)
+            if (grid[(int) v.x, (int) v.y] != null && grid[(int) v.x, (int) v.y].transform.parent.parent !=
+                currentTetriminoFalling.transform)
                 return false;
         }
 
@@ -160,9 +152,9 @@ public class GameMaster : MonoBehaviour
                 Vector2 v = Tetrimino.RoundVector(tetrimino.transform.position);
 
                 //Debug.Log("height: " + (int)v.y);
-                if ((int)v.y > tempHeight)
+                if ((int) v.y > tempHeight)
                 {
-                    tempHeight = (int)v.y;
+                    tempHeight = (int) v.y;
                 }
 
                 if (maxHeight != tempHeight)
@@ -174,7 +166,6 @@ public class GameMaster : MonoBehaviour
                 }
             }
         }
-
     }
 
     public bool CheckIsAboveGrid(GameObject tetrimino)
@@ -184,16 +175,16 @@ public class GameMaster : MonoBehaviour
             foreach (GameObject cube in FindObjectOfType<Tetrimino>().cubes)
             {
                 Vector2 v = Tetrimino.RoundVector(cube.transform.position);
-                if ((int)v.y > height - 1)
+                if ((int) v.y > height - 1)
                     return true;
             }
         }
+
         return false;
     }
 
     public void GameInfoUpdate()
     {
-
         //Debug.Log("Score = " + score);
         hud_score.text = score.ToString();
         level = (rows / 10) + 1;
@@ -206,12 +197,14 @@ public class GameMaster : MonoBehaviour
             stage = 2;
             SoundManager.PlayStage2();
         }
+
         if (rows >= rowsStage1 + rowsStage2)
         {
             stage2Effect.SetActive(true);
             stage = 3;
             SoundManager.PlayStage3();
         }
+
         if (rows >= rowsStage1 + rowsStage2 + rowsStage3)
         {
             stage3Effect.SetActive(true);
@@ -238,6 +231,7 @@ public class GameMaster : MonoBehaviour
             rowsUpdate -= (rowsStage1 + rowsStage2);
             stageRows = rowsStage3;
         }
+
         hud_stage.text = stage.ToString();
         //Debug.Log("Rows = " + rows);
         hud_rows.text = rowsUpdate.ToString();
@@ -256,7 +250,6 @@ public class GameMaster : MonoBehaviour
                     GameOver();
             }
         }
-
     }
 
     public void Speed()
@@ -287,7 +280,6 @@ public class GameMaster : MonoBehaviour
         Debug.Log("Playing game_lose event ");
 
         SceneManager.LoadScene("GameOver");
-
     }
 
     IEnumerator GameWin()

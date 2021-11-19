@@ -84,7 +84,7 @@ public class L : Tetrimino, ITetrimino
                 return;
             }
 
-            SoundManager.PlayDrop();
+            // SoundManager.PlayDrop();
             //UpdateGrid();
         }
     }

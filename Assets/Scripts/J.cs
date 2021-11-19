@@ -85,7 +85,7 @@ public class J : Tetrimino, ITetrimino
                 Root.transform.Translate(Vector3.up);
                 return;
             }
-            SoundManager.PlayDrop();
+            //SoundManager.PlayDrop();
             //UpdateGrid();
         }
     }
