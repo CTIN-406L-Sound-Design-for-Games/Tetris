@@ -44,6 +44,10 @@ public class GameMaster : MonoBehaviour
     [HideInInspector] public GameObject PreviewTetrimino;
     [HideInInspector] public bool gameStarted = false;
 
+    private float spaceTimer = 0.0f;
+    private bool spacePressed = false;
+    private bool stage2Played = false;
+    private bool stage3Played = false;
     private void Awake()
     {
         GameInfoUpdate();
@@ -62,33 +66,50 @@ public class GameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            spaceTimer = Time.time;
+            spacePressed = true;
+            // Debug.Log("Space = " + spaceTimer.ToString());
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            spaceTimer = Time.time - spaceTimer;
+            // Debug.Log("Space = " + spaceTimer.ToString());
+        }
         if (coolOffTime < Time.time)
         {
             
-
             // instantiate a new tetrimino and move it down ...
             if (currentTetriminoFalling == null || currentTetriminoFalling.GetComponent<Tetrimino>().isActive == false)
             {
-                
+                if ((spacePressed && spaceTimer<=2.0f && spaceTimer>0.1f) || Input.GetKey(KeyCode.Space))
+                {
+                    SoundManager.PlayDrop();
+                    spacePressed = false;
+                }
                 currentTetriminoFalling = SpawnNextTetrimino();
                 currentTetriminoFalling.GetComponent<Tetrimino>().isActive = true;
+                
             }
         }
 
         if (coolOffTime < Time.time)
         {
+            if ((spacePressed && spaceTimer<=2.0f && spaceTimer>0.1f) || Input.GetKey(KeyCode.Space))
+            {
+                SoundManager.PlayDrop();
+                spacePressed = false;
+            }
+            
             if (currentTetriminoFalling.GetComponent<Tetrimino>().isActive)
             {
                 currentTetriminoFalling.transform.Translate(Vector3.down);
                 
+                
 
                 if (!CheckIsValidPosition())
                 {
-                    if (Input.GetKey(KeyCode.Space))
-                    {
-                        SoundManager.PlayDrop();
-                        //Debug.Log("Space");
-                    }
                     currentTetriminoFalling.transform.Translate(Vector3.up);
                     currentTetriminoFalling.GetComponent<Tetrimino>().isActive = false;
                     if (CheckIsAboveGrid(currentTetriminoFalling))
@@ -109,11 +130,11 @@ public class GameMaster : MonoBehaviour
             Speed();
             CheckMaximumHeightRemaining();
         }
+        
     }
 
     GameObject SpawnNextTetrimino()
     {
-        
         GameObject NextTetrimino = GameObject.Instantiate(
             TetriminoPrefabs[Random.Range(0, TetriminoPrefabs.Length)],
             new Vector3(5, 20, 0),
@@ -132,7 +153,10 @@ public class GameMaster : MonoBehaviour
             Vector2 v = Tetrimino.RoundVector(cube.transform.position);
 
             if (!Tetrimino.IsInsideBorder(v))
+            {
                 return false;
+            }
+
             if (grid[(int) v.x, (int) v.y] != null && grid[(int) v.x, (int) v.y].transform.parent.parent !=
                 currentTetriminoFalling.transform)
                 return false;
@@ -160,7 +184,7 @@ public class GameMaster : MonoBehaviour
                 if (maxHeight != tempHeight)
                 {
                     maxHeight = tempHeight;
-                    AkSoundEngine.SetRTPCValue("height", GameMaster.score, GameObject.Find("WwiseGlobal"));
+                    AkSoundEngine.SetRTPCValue("hieght", maxHeight, GameObject.Find("WwiseGlobal"));
                     Debug.Log("RTPC Value height");
                     Debug.Log("maxHeight: " + maxHeight);
                 }
@@ -191,18 +215,20 @@ public class GameMaster : MonoBehaviour
         //Debug.Log("Level = " + level);
         hud_level.text = level.ToString();
 
-        if (rows >= rowsStage1)
+        if (rows >= rowsStage1 && !stage2Played)
         {
             stage1Effect.SetActive(true);
             stage = 2;
             SoundManager.PlayStage2();
+            stage2Played = true;
         }
 
-        if (rows >= rowsStage1 + rowsStage2)
+        if (rows >= rowsStage1 + rowsStage2 && !stage3Played)
         {
             stage2Effect.SetActive(true);
             stage = 3;
             SoundManager.PlayStage3();
+            stage2Played = true;
         }
 
         if (rows >= rowsStage1 + rowsStage2 + rowsStage3)

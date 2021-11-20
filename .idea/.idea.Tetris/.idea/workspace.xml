@@ -4,16 +4,6 @@
     <list default="true" id="4ce74fb0-8cff-42a5-a146-54235d40f7b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/I.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/I.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/J.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/J.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/L.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/L.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/O.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/S.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/S.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/T.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/T.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Z.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Z.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wwise Project/Wwise Project.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/Wwise Project/Wwise Project.crossover.validationcache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Desktop/Tetris-main/Assets/Scripts/GameMaster.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,7 +80,8 @@
       <workItem from="1636151647070" duration="1088000" />
       <workItem from="1636218501929" duration="1684000" />
       <workItem from="1636744117204" duration="1333000" />
-      <workItem from="1637358523708" duration="1053000" />
+      <workItem from="1637358523708" duration="3860000" />
+      <workItem from="1637397332107" duration="1177000" />
     </task>
     <servers />
   </component>
