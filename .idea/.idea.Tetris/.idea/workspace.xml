@@ -13,9 +13,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Desktop/Tetris-main/Assets/Scripts/GameMaster.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -81,7 +78,8 @@
       <workItem from="1636218501929" duration="1684000" />
       <workItem from="1636744117204" duration="1333000" />
       <workItem from="1637358523708" duration="3860000" />
-      <workItem from="1637397332107" duration="1177000" />
+      <workItem from="1637397332107" duration="1335000" />
+      <workItem from="1638088629686" duration="697000" />
     </task>
     <servers />
   </component>

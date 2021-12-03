@@ -228,7 +228,7 @@ public class GameMaster : MonoBehaviour
             stage2Effect.SetActive(true);
             stage = 3;
             SoundManager.PlayStage3();
-            stage2Played = true;
+            stage3Played = true;
         }
 
         if (rows >= rowsStage1 + rowsStage2 + rowsStage3)
