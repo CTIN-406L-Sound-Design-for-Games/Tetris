@@ -2208,6 +2208,14 @@ class AkSoundEnginePINVOKE {
   public static extern void CSharp_AkInitializationSettings_useAsyncOpen_set(global::System.IntPtr jarg1, bool jarg2);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_useAsyncOpen_get")]
   public static extern bool CSharp_AkInitializationSettings_useAsyncOpen_get(global::System.IntPtr jarg1);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_uMemAllocationSizeLimit_set")]
+  public static extern void CSharp_AkInitializationSettings_uMemAllocationSizeLimit_set(global::System.IntPtr jarg1, uint jarg2);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_uMemAllocationSizeLimit_get")]
+  public static extern uint CSharp_AkInitializationSettings_uMemAllocationSizeLimit_get(global::System.IntPtr jarg1);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_uMemDebugLevel_set")]
+  public static extern void CSharp_AkInitializationSettings_uMemDebugLevel_set(global::System.IntPtr jarg1, uint jarg2);
+  [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_AkInitializationSettings_uMemDebugLevel_get")]
+  public static extern uint CSharp_AkInitializationSettings_uMemDebugLevel_get(global::System.IntPtr jarg1);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_new_AkExternalSourceInfo__SWIG_0")]
   public static extern global::System.IntPtr CSharp_new_AkExternalSourceInfo__SWIG_0();
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_delete_AkExternalSourceInfo")]
@@ -2341,7 +2349,7 @@ class AkSoundEnginePINVOKE {
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_GetCaptureSamples")]
   public static extern uint CSharp_GetCaptureSamples(ulong jarg1, [global::System.Runtime.InteropServices.In, global::System.Runtime.InteropServices.Out, global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPArray)]float[] jarg2, uint jarg3);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_SetRoomPortal")]
-  public static extern int CSharp_SetRoomPortal(ulong jarg1, global::System.IntPtr jarg2, global::System.IntPtr jarg3, bool jarg4, ulong jarg5, ulong jarg6);
+  public static extern int CSharp_SetRoomPortal(ulong jarg1, ulong jarg2, ulong jarg3, global::System.IntPtr jarg4, global::System.IntPtr jarg5, bool jarg6, [global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPStr)]string jarg7);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_SetRoom")]
   public static extern int CSharp_SetRoom(ulong jarg1, global::System.IntPtr jarg2, ulong jarg3, [global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPStr)]string jarg4);
   [global::System.Runtime.InteropServices.DllImport("AkSoundEngine", EntryPoint="CSharp_RegisterSpatialAudioListener")]

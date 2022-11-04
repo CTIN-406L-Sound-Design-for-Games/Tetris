@@ -93,7 +93,9 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 		"AdvancedSettings.m_UseAsyncOpen",
 		"AdvancedSettings.m_SoundBankPersistentDataPath",
 		"AdvancedSettings.m_DebugOutOfRangeCheckEnabled",
-		"AdvancedSettings.m_DebugOutOfRangeLimit"
+		"AdvancedSettings.m_DebugOutOfRangeLimit",
+		"AdvancedSettings.m_MemoryAllocationSizeLimit",
+		"AdvancedSettings.m_MemoryDebugLevel"
 	};
 
 	public abstract class PlatformSettings : AkCommonPlatformSettings
@@ -394,6 +396,8 @@ public class AkWwiseInitializationSettings : AkCommonPlatformSettings
 	{
 		if (!AkSoundEngine.IsInitialized())
 			return;
+
+		AkSoundEngine.SetOfflineRendering(false);
 
 		// Stop everything, and make sure the callback buffer is empty. We try emptying as much as possible, and wait 10 ms before retrying.
 		// Callbacks can take a long time to be posted after the call to RenderAudio().

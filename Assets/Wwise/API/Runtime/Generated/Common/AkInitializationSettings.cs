@@ -104,5 +104,11 @@ public class AkInitializationSettings : global::System.IDisposable {
   public bool useAsyncOpen { set { AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_useAsyncOpen_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_useAsyncOpen_get(swigCPtr); } 
   }
 
+  public uint uMemAllocationSizeLimit { set { AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemAllocationSizeLimit_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemAllocationSizeLimit_get(swigCPtr); } 
+  }
+
+  public uint uMemDebugLevel { set { AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemDebugLevel_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkInitializationSettings_uMemDebugLevel_get(swigCPtr); } 
+  }
+
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

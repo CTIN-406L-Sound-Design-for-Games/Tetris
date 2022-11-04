@@ -6,11 +6,12 @@
   <CreatedPicker>true</CreatedPicker>
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>true</CreateWwiseListener>
+  <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2021.1.4.7707/Wwise.app</WwiseInstallationPathMac>
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2021.1.10.7883/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../Wwise Project/Wwise Project.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Tetris/Wwise Project/Wwise Project.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
