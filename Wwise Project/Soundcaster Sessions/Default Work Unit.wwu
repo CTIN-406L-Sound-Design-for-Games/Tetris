@@ -32,7 +32,9 @@
 							<Value>1.08960447028795E-317</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="gameplay" ID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

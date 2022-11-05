@@ -11,27 +11,120 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1512283547">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1689182278">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="1026031894">
+		<SoundBank Id="3052682920" Language="SFX" Hash="3831467291">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="3425053597" Name="game_lose" ObjectPath="\Events\Default Work Unit\game_lose" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="3218375656" Name="game_win" ObjectPath="\Events\Default Work Unit\game_win" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="3205476178" Name="shape_flip" ObjectPath="\Events\Default Work Unit\shape_flip" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="597916644" Name="shape_land" ObjectPath="\Events\Default Work Unit\shape_land" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="1269712800" Name="shape_left" ObjectPath="\Events\Default Work Unit\shape_left" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
-				<Event Id="3911910199" Name="shape_right" ObjectPath="\Events\Default Work Unit\shape_right" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="4175426381" Name="stage_1" ObjectPath="\Events\Default Work Unit\stage_1" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="4175426382" Name="stage_2" ObjectPath="\Events\Default Work Unit\stage_2" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
-				<Event Id="4175426383" Name="stage_3" ObjectPath="\Events\Default Work Unit\stage_3" DurationType="OneShot" DurationMin="0.074915" DurationMax="0.074915"/>
+				<Event Id="1870373793" Name="clear_row" ObjectPath="\Events\Default Work Unit\clear_row" DurationType="OneShot" DurationMin="1.093968" DurationMax="1.093968">
+					<IncludedMemoryFiles>
+						<File Id="206009330" Language="SFX">
+							<ShortName>clear_row.wav</ShortName>
+							<Path>SFX/clear_row_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3445156508" Name="game_initialize" ObjectPath="\Events\Default Work Unit\game_initialize" DurationType="OneShot" DurationMin="1.165669" DurationMax="1.165669">
+					<IncludedMemoryFiles>
+						<File Id="634684150" Language="SFX">
+							<ShortName>game_initialize.wav</ShortName>
+							<Path>SFX/game_initialize_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3425053597" Name="game_lose" ObjectPath="\Events\Default Work Unit\game_lose" DurationType="OneShot" DurationMin="1.237642" DurationMax="1.237642">
+					<IncludedMemoryFiles>
+						<File Id="294269895" Language="SFX">
+							<ShortName>game_lose.wav</ShortName>
+							<Path>SFX/game_lose_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="636067499" Name="game_menu" ObjectPath="\Events\Default Work Unit\game_menu" DurationType="OneShot" DurationMin="1.123787" DurationMax="1.123787">
+					<IncludedMemoryFiles>
+						<File Id="702579339" Language="SFX">
+							<ShortName>game_menu.wav</ShortName>
+							<Path>SFX/game_menu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="1.342721" DurationMax="1.342721">
+					<IncludedMemoryFiles>
+						<File Id="1062635415" Language="SFX">
+							<ShortName>game_start.wav</ShortName>
+							<Path>SFX/game_start_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3218375656" Name="game_win" ObjectPath="\Events\Default Work Unit\game_win" DurationType="OneShot" DurationMin="1.372245" DurationMax="1.372245">
+					<IncludedMemoryFiles>
+						<File Id="933091898" Language="SFX">
+							<ShortName>game_win.wav</ShortName>
+							<Path>SFX/game_win_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3205476178" Name="shape_flip" ObjectPath="\Events\Default Work Unit\shape_flip" DurationType="OneShot" DurationMin="1.427211" DurationMax="1.427211">
+					<IncludedMemoryFiles>
+						<File Id="14240867" Language="SFX">
+							<ShortName>shape_flip.wav</ShortName>
+							<Path>SFX/shape_flip_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="597916644" Name="shape_land" ObjectPath="\Events\Default Work Unit\shape_land" DurationType="OneShot" DurationMin="1.61585" DurationMax="1.61585">
+					<IncludedMemoryFiles>
+						<File Id="452085129" Language="SFX">
+							<ShortName>shape_land.wav</ShortName>
+							<Path>SFX/shape_land_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1269712800" Name="shape_left" ObjectPath="\Events\Default Work Unit\shape_left" DurationType="OneShot" DurationMin="0.847755" DurationMax="0.847755">
+					<IncludedMemoryFiles>
+						<File Id="186011613" Language="SFX">
+							<ShortName>shape_left.wav</ShortName>
+							<Path>SFX/shape_left_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3911910199" Name="shape_right" ObjectPath="\Events\Default Work Unit\shape_right" DurationType="OneShot" DurationMin="0.746281" DurationMax="0.746281">
+					<IncludedMemoryFiles>
+						<File Id="274343749" Language="SFX">
+							<ShortName>shape_right.wav</ShortName>
+							<Path>SFX/shape_right_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4175426381" Name="stage_1" ObjectPath="\Events\Default Work Unit\stage_1" DurationType="OneShot" DurationMin="1.209955" DurationMax="1.209955">
+					<IncludedMemoryFiles>
+						<File Id="120872679" Language="SFX">
+							<ShortName>stage_1.wav</ShortName>
+							<Path>SFX/stage_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4175426382" Name="stage_2" ObjectPath="\Events\Default Work Unit\stage_2" DurationType="OneShot" DurationMin="1.298458" DurationMax="1.298458">
+					<IncludedMemoryFiles>
+						<File Id="892786157" Language="SFX">
+							<ShortName>stage_2.wav</ShortName>
+							<Path>SFX/stage_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4175426383" Name="stage_3" ObjectPath="\Events\Default Work Unit\stage_3" DurationType="OneShot" DurationMin="1.608322" DurationMax="1.608322">
+					<IncludedMemoryFiles>
+						<File Id="169402479" Language="SFX">
+							<ShortName>stage_3.wav</ShortName>
+							<Path>SFX/stage_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

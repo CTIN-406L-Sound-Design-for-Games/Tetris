@@ -1,18 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
 	597916644	shape_land			\Default Work Unit\shape_land	
+	636067499	game_menu			\Default Work Unit\game_menu	
 	733168346	game_start			\Default Work Unit\game_start	
 	1269712800	shape_left			\Default Work Unit\shape_left	
 	1870373793	clear_row			\Default Work Unit\clear_row	
 	3205476178	shape_flip			\Default Work Unit\shape_flip	
 	3218375656	game_win			\Default Work Unit\game_win	
 	3425053597	game_lose			\Default Work Unit\game_lose	
+	3445156508	game_initialize			\Default Work Unit\game_initialize	
 	3911910199	shape_right			\Default Work Unit\shape_right	
 	4175426381	stage_1			\Default Work Unit\stage_1	
 	4175426382	stage_2			\Default Work Unit\stage_2	
 	4175426383	stage_3			\Default Work Unit\stage_3	
 
-Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	520727909	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\temp\Wwise Sine	
-	869014346	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\temp_right\Wwise Sine	
-	971023863	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\temp_left\Wwise Sine	
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	14240867	shape_flip	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\shape_flip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shape_flip		251824
+	120872679	stage_1	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\stage_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_1		213500
+	169402479	stage_3	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\stage_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_3		283772
+	186011613	shape_left	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\shape_left_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shape_left		149608
+	206009330	clear_row	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\clear_row_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\clear_row		193040
+	274343749	shape_right	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\shape_right_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shape_right		131708
+	294269895	game_lose	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\game_lose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_lose		218384
+	452085129	shape_land	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\shape_land_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shape_land		285100
+	634684150	game_initialize	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\game_initialize_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_initialize		205688
+	702579339	game_menu	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\game_menu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_menu		198300
+	892786157	stage_2	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\stage_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\stage_2		229112
+	933091898	game_win	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\game_win_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_win		242128
+	1062635415	game_start	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\.cache\Mac\SFX\game_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\game_start		236920
 
