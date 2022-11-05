@@ -33,7 +33,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="gameplay" ID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}"/>
+						<CurrentStateRef Name="stage_1" ID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}"/>
+						<CurrentStateRef Name="lose" ID="{955FF771-E801-4081-B840-F1CE6BD9ED46}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

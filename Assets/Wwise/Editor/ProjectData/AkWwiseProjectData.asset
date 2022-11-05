@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: fe4b4def3b6ab142ae5ed63c986c48e6
     GuidInternal: 
-    m_lastTime: -8585339274703157590
+    m_lastTime: -8585339262520861890
     List:
     - name: clear_row
       guid: 3ee07689a7846740a115303864ba0177
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: fac911a33c34ac4081c6c9904201badb
       Path: Events/Default Work Unit/game_lose
       maxAttenuation: 0
-      maxDuration: 1.237642
-      minDuration: 1.237642
+      maxDuration: 0
+      minDuration: 0
     - name: game_menu
       guid: 344887d91e6ded4da2a93c24fa1d1d95
       id: 636067499
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 2e6aeffeff0f754cb8e71430a5e703ac
       Path: Events/Default Work Unit/game_win
       maxAttenuation: 0
-      maxDuration: 1.372245
-      minDuration: 1.372245
+      maxDuration: 0
+      minDuration: 0
     - name: shape_flip
       guid: 01f2d56df7369340b56dcfeb6a810cda
       id: 3205476178

@@ -95,29 +95,6 @@
 						<ActiveSource Name="game_initialize" ID="{AED12891-D8DF-41C0-B377-30544D8E97FA}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="game_lose" ID="{8731F8B8-570C-4B34-8A5F-628935F25EE4}" ShortID="760995123">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{59610F16-BD7D-4EFC-BFF2-7E75E7BE3EA4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{208994AB-AA5E-49FD-A896-32FF49E8105C}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="game_lose" ID="{47C89014-BCCC-4FAA-BEC5-9FA08B4BF1C4}">
-							<Language>SFX</Language>
-							<AudioFile>game_lose.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="294269895"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="game_lose" ID="{47C89014-BCCC-4FAA-BEC5-9FA08B4BF1C4}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="game_start" ID="{816FE338-4056-413D-BA1B-E7B6BC17AF1B}" ShortID="884166537">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -139,29 +116,6 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="game_start" ID="{4AEA1A47-C8AD-46ED-86CC-DDB6DDA9BF6C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="game_win" ID="{DF4DF65D-B5A1-49CA-98A6-471E58121501}" ShortID="87209123">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{59610F16-BD7D-4EFC-BFF2-7E75E7BE3EA4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{208994AB-AA5E-49FD-A896-32FF49E8105C}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="game_win" ID="{9E356D6F-4AE0-47C7-B7A1-1DE8B92EB8D0}">
-							<Language>SFX</Language>
-							<AudioFile>game_win.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="933091898"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="game_win" ID="{9E356D6F-4AE0-47C7-B7A1-1DE8B92EB8D0}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="shape_flip" ID="{214061E8-31DD-4055-87A8-F31D5F69EB81}" ShortID="273355895">

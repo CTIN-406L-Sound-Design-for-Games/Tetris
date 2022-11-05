@@ -185,8 +185,7 @@ public class GameMaster : MonoBehaviour
                 {
                     maxHeight = tempHeight;
                     AkSoundEngine.SetRTPCValue("hieght", maxHeight, GameObject.Find("WwiseGlobal"));
-                    Debug.Log("RTPC Value height");
-                    Debug.Log("maxHeight: " + maxHeight);
+                    Debug.Log("RTPC Value maxHeight: " + maxHeight);
                 }
             }
         }

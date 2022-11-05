@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3052682920" Language="SFX" Hash="3831467291">
+		<SoundBank Id="3052682920" Language="SFX" Hash="3717963051">
 			<ObjectPath>\SoundBanks\Default Work Unit\Tetris_Soundbank</ObjectPath>
 			<ShortName>Tetris_Soundbank</ShortName>
 			<Path>Tetris_Soundbank.bnk</Path>
@@ -37,21 +37,85 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3425053597" Name="game_lose" ObjectPath="\Events\Default Work Unit\game_lose" DurationType="OneShot" DurationMin="1.237642" DurationMax="1.237642">
-					<IncludedMemoryFiles>
-						<File Id="294269895" Language="SFX">
-							<ShortName>game_lose.wav</ShortName>
-							<Path>SFX/game_lose_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3425053597" Name="game_lose" ObjectPath="\Events\Default Work Unit\game_lose" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="221232726" Name="lose" ObjectPath="\States\Default Work Unit\game_state\lose"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="636067499" Name="game_menu" ObjectPath="\Events\Default Work Unit\game_menu" DurationType="OneShot" DurationMin="1.123787" DurationMax="1.123787">
+				<Event Id="636067499" Name="game_menu" ObjectPath="\Events\Default Work Unit\game_menu" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="23285198" Language="SFX">
+							<ShortName>game_lose.wav</ShortName>
+							<Path>SFX/game_lose_D79FB2B7.wem</Path>
+						</File>
+						<File Id="102890222" Language="SFX">
+							<ShortName>nw_loop_3.wav</ShortName>
+							<Path>SFX/nw_loop_3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="254482263" Language="SFX">
+							<ShortName>nw_loop_2.wav</ShortName>
+							<Path>SFX/nw_loop_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="643319137" Language="SFX">
+							<ShortName>nw_loop_1.wav</ShortName>
+							<Path>SFX/nw_loop_1_D79FB2B7.wem</Path>
+						</File>
 						<File Id="702579339" Language="SFX">
 							<ShortName>game_menu.wav</ShortName>
 							<Path>SFX/game_menu_10C4C929.wem</Path>
 						</File>
+						<File Id="767983545" Language="SFX">
+							<ShortName>game_win.wav</ShortName>
+							<Path>SFX/game_win_D79FB2B7.wem</Path>
+						</File>
+						<File Id="788717597" Language="SFX">
+							<ShortName>CymSwell.wav</ShortName>
+							<Path>SFX/CymSwell_D79FB2B7.wem</Path>
+						</File>
+						<File Id="858799596" Language="SFX">
+							<ShortName>nw_menu.wav</ShortName>
+							<Path>SFX/nw_menu_D79FB2B7.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{14BA22DD-92A8-4276-8CCB-ADE416845272}">
+							<Media>
+								<File Id="858799596"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}">
+							<Children>
+								<SwitchContainer SwitchValue="{583C4185-0527-49D5-B3F1-96F66DC0C9EA}">
+									<Media>
+										<File Id="102890222"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}">
+									<Media>
+										<File Id="643319137"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{7527AF49-505C-406B-A689-5F35696C09C2}">
+									<Media>
+										<File Id="254482263"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5E01DFB8-D92F-4394-BC6A-CB6617C9D706}">
+							<Media>
+								<File Id="767983545"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{955FF771-E801-4081-B840-F1CE6BD9ED46}">
+							<Media>
+								<File Id="23285198"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\game_state\menu"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="OneShot" DurationMin="1.342721" DurationMax="1.342721">
 					<IncludedMemoryFiles>
@@ -60,14 +124,14 @@
 							<Path>SFX/game_start_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state\gameplay"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="3218375656" Name="game_win" ObjectPath="\Events\Default Work Unit\game_win" DurationType="OneShot" DurationMin="1.372245" DurationMax="1.372245">
-					<IncludedMemoryFiles>
-						<File Id="933091898" Language="SFX">
-							<ShortName>game_win.wav</ShortName>
-							<Path>SFX/game_win_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
+				<Event Id="3218375656" Name="game_win" ObjectPath="\Events\Default Work Unit\game_win" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="979765101" Name="win" ObjectPath="\States\Default Work Unit\game_state\win"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3205476178" Name="shape_flip" ObjectPath="\Events\Default Work Unit\shape_flip" DurationType="OneShot" DurationMin="1.427211" DurationMax="1.427211">
 					<IncludedMemoryFiles>
@@ -108,6 +172,9 @@
 							<Path>SFX/stage_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="4175426381" Name="stage_1" ObjectPath="\States\Default Work Unit\stages\stage_1"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="4175426382" Name="stage_2" ObjectPath="\Events\Default Work Unit\stage_2" DurationType="OneShot" DurationMin="1.298458" DurationMax="1.298458">
 					<IncludedMemoryFiles>
@@ -116,6 +183,9 @@
 							<Path>SFX/stage_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="4175426382" Name="stage_2" ObjectPath="\States\Default Work Unit\stages\stage_2"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="4175426383" Name="stage_3" ObjectPath="\Events\Default Work Unit\stage_3" DurationType="OneShot" DurationMin="1.608322" DurationMax="1.608322">
 					<IncludedMemoryFiles>
@@ -124,8 +194,51 @@
 							<Path>SFX/stage_3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="4175426383" Name="stage_3" ObjectPath="\States\Default Work Unit\stages\stage_3"/>
+					</ActionSetState>
 				</Event>
 			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state\gameplay" GUID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="221232726" Name="lose" ObjectPath="\States\Default Work Unit\game_state\lose" GUID="{955FF771-E801-4081-B840-F1CE6BD9ED46}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="766723505" Name="game_state" ObjectPath="\States\Default Work Unit\game_state" GUID="{7D88B836-C9C4-4856-8723-E8BC0447CFF9}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\game_state\None" GUID="{58BA7A27-0900-4AB1-BFCA-A4B8101E6175}"/>
+						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state\gameplay" GUID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}"/>
+						<State Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\game_state\menu" GUID="{14BA22DD-92A8-4276-8CCB-ADE416845272}"/>
+						<State Id="979765101" Name="win" ObjectPath="\States\Default Work Unit\game_state\win" GUID="{5E01DFB8-D92F-4394-BC6A-CB6617C9D706}"/>
+						<State Id="221232726" Name="lose" ObjectPath="\States\Default Work Unit\game_state\lose" GUID="{955FF771-E801-4081-B840-F1CE6BD9ED46}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="936729656" Name="stages" ObjectPath="\States\Default Work Unit\stages" GUID="{6324B2E3-8858-46F8-BAB5-58351B1DBB6A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\stages\None" GUID="{2DAF8914-4C1C-4550-A1C8-8F35191BB153}"/>
+						<State Id="4175426381" Name="stage_1" ObjectPath="\States\Default Work Unit\stages\stage_1" GUID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}"/>
+						<State Id="4175426382" Name="stage_2" ObjectPath="\States\Default Work Unit\stages\stage_2" GUID="{7527AF49-505C-406B-A689-5F35696C09C2}"/>
+						<State Id="4175426383" Name="stage_3" ObjectPath="\States\Default Work Unit\stages\stage_3" GUID="{583C4185-0527-49D5-B3F1-96F66DC0C9EA}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="979765101" Name="win" ObjectPath="\States\Default Work Unit\game_state\win" GUID="{5E01DFB8-D92F-4394-BC6A-CB6617C9D706}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2607556080" Name="menu" ObjectPath="\States\Default Work Unit\game_state\menu" GUID="{14BA22DD-92A8-4276-8CCB-ADE416845272}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4175426381" Name="stage_1" ObjectPath="\States\Default Work Unit\stages\stage_1" GUID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4175426382" Name="stage_2" ObjectPath="\States\Default Work Unit\stages\stage_2" GUID="{7527AF49-505C-406B-A689-5F35696C09C2}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4175426383" Name="stage_3" ObjectPath="\States\Default Work Unit\stages\stage_3" GUID="{583C4185-0527-49D5-B3F1-96F66DC0C9EA}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
