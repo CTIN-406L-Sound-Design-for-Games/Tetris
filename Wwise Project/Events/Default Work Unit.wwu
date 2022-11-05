@@ -133,6 +133,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{65B93379-99A4-4258-8001-19A342DBADAF}" ShortID="678392026">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="game_lose" ID="{A311C9FA-343C-40AC-81C6-C9904201BADB}">
@@ -144,6 +155,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="lose" ID="{955FF771-E801-4081-B840-F1CE6BD9ED46}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{58BB1C48-C5D8-4A3B-917C-92F371EB718D}" ShortID="342634978">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
