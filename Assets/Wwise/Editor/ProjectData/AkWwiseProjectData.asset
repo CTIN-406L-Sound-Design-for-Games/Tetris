@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: fe4b4def3b6ab142ae5ed63c986c48e6
     GuidInternal: 
-    m_lastTime: -8585339262520861890
+    m_lastTime: -8585339252999723906
     List:
     - name: clear_row
       guid: 3ee07689a7846740a115303864ba0177
@@ -162,8 +162,8 @@ MonoBehaviour:
         guid: 344887d91e6ded4da2a93c24fa1d1d95
       Path: Events/Default Work Unit/game_menu
       maxAttenuation: 0
-      maxDuration: 1.123787
-      minDuration: 1.123787
+      maxDuration: -1
+      minDuration: -1
     - name: game_start
       guid: 04b53d37b28d9b49871d16f474907360
       id: 733168346
