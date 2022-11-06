@@ -8,6 +8,11 @@ using Random = UnityEngine.Random;
 
 public class GameMaster : MonoBehaviour
 {
+    //Singleton
+    public static GameMaster instance;
+    
+    
+    //
     [Header("Tetrimino")] public GameObject[] TetriminoPrefabs;
     public static int height = 20+2;
     public static int width = 10;
@@ -50,7 +55,10 @@ public class GameMaster : MonoBehaviour
     private bool stage3Played = false;
     private void Awake()
     {
+        if (instance == null) instance = this;
+        else Debug.LogError("2 GameMasters are loaded.");
         GameInfoUpdate();
+        
     }
 
     // Start is called before the first frame update
@@ -117,8 +125,8 @@ public class GameMaster : MonoBehaviour
                         GameOver();
                     }
 
-                    GetComponent<Tetrimino>().UpdateGrid();
-                    GetComponent<Tetrimino>().DeleteRow();
+                    Tetrimino.UpdateGrid();
+                    Tetrimino.DeleteRow();
                     GameInfoUpdate();
                 }
                 else

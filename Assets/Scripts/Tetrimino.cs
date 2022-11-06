@@ -18,8 +18,9 @@ public class Tetrimino : MonoBehaviour
 
     [FormerlySerializedAs("Pivot")] [Tooltip("Used for rotation")]
     public GameObject pivot;
+    
     public static int width = 10;
-    public int height = 20;
+    public static int height = 20;
 
     public bool isActive = true;
 
@@ -138,7 +139,7 @@ public class Tetrimino : MonoBehaviour
         return ((int)pos.x >= 0 && (int)pos.x > width - 1 && (int)pos.y >= 0);
     }
 
-    public void UpdateGrid()
+    public static void UpdateGrid()
     {
         
         
@@ -147,7 +148,7 @@ public class Tetrimino : MonoBehaviour
             for (int x = 0; x < width; ++x)
             {
                 if (GameMaster.grid[x, y] != null)
-                    if (GameMaster.grid[x, y].transform.parent.parent == GetComponent<GameMaster>().currentTetriminoFalling.GetComponent<Tetrimino>().root.transform)
+                    if (GameMaster.grid[x, y].transform.parent.parent == GameMaster.instance.currentTetriminoFalling.GetComponent<Tetrimino>().root.transform)
                         GameMaster.grid[x, y] = null;
             }
         }
@@ -163,7 +164,7 @@ public class Tetrimino : MonoBehaviour
         }
     }
 
-    public void Delete(int y)
+    public static void Delete(int y)
     {
         for (int x = 0; x < width; x++)
         {
@@ -171,7 +172,7 @@ public class Tetrimino : MonoBehaviour
             GameMaster.grid[x, y] = null;
         }
     }
-    public bool IsFull(int y)
+    public static bool IsFull(int y)
     {
         for (int x = 0; x < width; x++)
             if (GameMaster.grid[x, y] == null)
@@ -179,7 +180,7 @@ public class Tetrimino : MonoBehaviour
         return true;
     }
 
-    public void DeleteRow()
+    public static void DeleteRow()
     {
         int r = 0;
         for (int y = 0; y < height; y++)
@@ -226,7 +227,7 @@ public class Tetrimino : MonoBehaviour
         //UpdateGrid();
     }
 
-    public void RowDown(int y)
+    public static void RowDown(int y)
     {
         for (int x = 0; x < width; x++)
         {
@@ -239,7 +240,7 @@ public class Tetrimino : MonoBehaviour
         }
     }
 
-    public void RowDownAll(int y)
+    public static void RowDownAll(int y)
     {
         for (int i = y; i < height; i++)
             RowDown(i);
