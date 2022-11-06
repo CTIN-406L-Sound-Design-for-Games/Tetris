@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum TetriminoType
 {
@@ -12,11 +13,11 @@ public class Tetrimino : MonoBehaviour
 
     // public SoundManager soundManager;
     public TetriminoType Type;
-    [Tooltip("Used for translation")]
-    public GameObject Root;
+    [FormerlySerializedAs("Root")] [Tooltip("Used for translation")]
+    public GameObject root;
 
-    [Tooltip("Used for rotation")]
-    public GameObject Pivot;
+    [FormerlySerializedAs("Pivot")] [Tooltip("Used for rotation")]
+    public GameObject pivot;
     public static int width = 10;
     public int height = 20;
 
@@ -31,6 +32,92 @@ public class Tetrimino : MonoBehaviour
 
     //public static GameObject[,] grid = new GameObject[width, height];
 
+    #region Inheritance
+    
+    // Update is called once per frame
+    void Update()
+    {
+        if (isActive)
+        {
+            CheckForUserInput();
+        }
+        //UpdateGrid();
+
+    }
+
+
+    void CheckForUserInput()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            root.transform.Translate(Vector3.left);
+
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            {
+                root.transform.Translate(Vector3.right);
+                return;
+            }
+
+            SoundManager.PlayLeft();
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            root.transform.Translate(Vector3.right);
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            {
+                root.transform.Translate(Vector3.left);
+                return;
+            }
+
+            SoundManager.PlayRight();
+        }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            pivot.transform.Rotate(Vector3.forward, 90);
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            {
+                pivot.transform.Rotate(Vector3.forward, -90);
+                return;
+            }
+
+            SoundManager.PlayFlipUp();
+        }
+
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+
+            pivot.transform.Rotate(Vector3.forward, -90);
+
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            {
+                pivot.transform.Rotate(Vector3.forward, 90);
+                return;
+            }
+
+            SoundManager.PlayFlipDown();
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            root.transform.Translate(Vector3.down);
+
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            {
+                root.transform.Translate(Vector3.up);
+                return;
+            }
+            //SoundManager.PlayDrop();
+            //UpdateGrid();
+        }
+    }
+    #endregion
+    
+    
+    
+    
     //return the round value of the vector
     public static Vector2 RoundVector(Vector2 v)
     {
@@ -60,7 +147,7 @@ public class Tetrimino : MonoBehaviour
             for (int x = 0; x < width; ++x)
             {
                 if (GameMaster.grid[x, y] != null)
-                    if (GameMaster.grid[x, y].transform.parent.parent == GetComponent<GameMaster>().currentTetriminoFalling.GetComponent<Tetrimino>().Root.transform)
+                    if (GameMaster.grid[x, y].transform.parent.parent == GetComponent<GameMaster>().currentTetriminoFalling.GetComponent<Tetrimino>().root.transform)
                         GameMaster.grid[x, y] = null;
             }
         }

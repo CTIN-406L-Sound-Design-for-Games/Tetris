@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class GameMaster : MonoBehaviour
 {
     [Header("Tetrimino")] public GameObject[] TetriminoPrefabs;
-    public static int height = 20;
+    public static int height = 20+2;
     public static int width = 10;
     public float speed = 1.0f;
     public float coolOffTime;
@@ -157,6 +157,7 @@ public class GameMaster : MonoBehaviour
                 return false;
             }
 
+            Debug.Log((int)v.x+"    "+(int)v.y);
             if (grid[(int) v.x, (int) v.y] != null && grid[(int) v.x, (int) v.y].transform.parent.parent !=
                 currentTetriminoFalling.transform)
                 return false;

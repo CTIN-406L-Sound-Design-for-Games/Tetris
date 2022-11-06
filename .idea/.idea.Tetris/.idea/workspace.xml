@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ce74fb0-8cff-42a5-a146-54235d40f7b7" name="Default Changelist" comment="" />
+    <list default="true" id="4ce74fb0-8cff-42a5-a146-54235d40f7b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/I.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/I.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/J.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/J.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/L.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/L.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/O.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/S.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/S.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/T.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/T.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Z.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Z.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,19 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MacOS/Unity" />
@@ -96,6 +106,7 @@
       <workItem from="1637397332107" duration="1335000" />
       <workItem from="1638088629686" duration="697000" />
       <workItem from="1667593468215" duration="996000" />
+      <workItem from="1667707096712" duration="1174000" />
     </task>
     <servers />
   </component>
@@ -115,6 +126,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
