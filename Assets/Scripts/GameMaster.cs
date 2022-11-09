@@ -113,10 +113,10 @@ public class GameMaster : MonoBehaviour
             if (currentTetriminoFalling.GetComponent<Tetrimino>().isActive)
             {
                 currentTetriminoFalling.transform.Translate(Vector3.down);
-                
-                
 
-                if (!CheckIsValidPosition())
+
+                string unvalid;
+                if (!CheckIsValidPosition(out unvalid))
                 {
                     currentTetriminoFalling.transform.Translate(Vector3.up);
                     currentTetriminoFalling.GetComponent<Tetrimino>().isActive = false;
@@ -154,23 +154,24 @@ public class GameMaster : MonoBehaviour
     }
 
 
-    public bool CheckIsValidPosition()
+    public bool CheckIsValidPosition(out string unvalid)
     {
         foreach (GameObject cube in FindObjectOfType<Tetrimino>().cubes)
         {
             Vector2 v = Tetrimino.RoundVector(cube.transform.position);
 
-            if (!Tetrimino.IsInsideBorder(v))
+            if (!Tetrimino.IsInsideBorder(v,out unvalid))
             {
                 return false;
             }
 
             Debug.Log((int)v.x+"    "+(int)v.y);
-            if (grid[(int) v.x, (int) v.y] != null && grid[(int) v.x, (int) v.y].transform.parent.parent !=
-                currentTetriminoFalling.transform)
+            if (grid[(int) v.x, (int) v.y] != null &&
+                grid[(int) v.x, (int) v.y].transform.parent.parent != currentTetriminoFalling.transform)
                 return false;
         }
 
+        unvalid = "";
         return true;
     }
 

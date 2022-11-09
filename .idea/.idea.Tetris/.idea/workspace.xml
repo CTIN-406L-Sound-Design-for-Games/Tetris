@@ -6,18 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4ce74fb0-8cff-42a5-a146-54235d40f7b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tetris/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/I.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/I.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/J.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/J.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/L.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/L.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/O.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/O.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/S.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/S.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/T.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/T.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tetrimino.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Z.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Z.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -107,6 +109,7 @@
       <workItem from="1638088629686" duration="697000" />
       <workItem from="1667593468215" duration="996000" />
       <workItem from="1667707096712" duration="1174000" />
+      <workItem from="1667963864912" duration="3165000" />
     </task>
     <servers />
   </component>
@@ -130,15 +133,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="412" y="130" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1636219409180">
-      <screen x="0" y="25" width="1536" height="873" />
-    </state>
-    <state x="412" y="130" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.25.1536.873@0.25.1536.873" timestamp="1636219409180" />
-    <state x="115" y="125" width="1321" height="673" key="VCS.FileHistoryDialog" timestamp="1636151715721">
-      <screen x="0" y="25" width="1536" height="873" />
-    </state>
-    <state x="115" y="125" width="1321" height="673" key="VCS.FileHistoryDialog/0.25.1536.873@0.25.1536.873" timestamp="1636151715721" />
   </component>
 </project>

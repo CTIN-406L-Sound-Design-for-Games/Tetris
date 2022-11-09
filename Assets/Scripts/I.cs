@@ -18,6 +18,19 @@ public class I : Tetrimino, ITetrimino
         return Type;
     }
 
-    
+    private bool rotated;
+    protected override void RotateForward()
+    {
+        rotated = !rotated;
+        pivot.transform.Rotate(Vector3.forward, rotated?90:-90);
+        SoundManager.PlayFlipUp();
+    }
+
+    protected override void RotateBack()
+    {
+        rotated = !rotated;
+        pivot.transform.Rotate(Vector3.forward, rotated?90:-90);
+        SoundManager.PlayFlipDown();
+    }
 }
 

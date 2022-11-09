@@ -49,11 +49,11 @@ public class Tetrimino : MonoBehaviour
 
     void CheckForUserInput()
     {
+        string unvalid;
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             root.transform.Translate(Vector3.left);
-
-            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition(out unvalid))
             {
                 root.transform.Translate(Vector3.right);
                 return;
@@ -66,7 +66,7 @@ public class Tetrimino : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             root.transform.Translate(Vector3.right);
-            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition(out unvalid))
             {
                 root.transform.Translate(Vector3.left);
                 return;
@@ -77,35 +77,37 @@ public class Tetrimino : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            pivot.transform.Rotate(Vector3.forward, 90);
-            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            RotateForward();
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition(out unvalid))
             {
-                pivot.transform.Rotate(Vector3.forward, -90);
+                if(unvalid=="Left")
+                    root.transform.Translate(Vector3.right);
+                else if(unvalid=="Right")
+                    root.transform.Translate(Vector3.left);
                 return;
             }
 
-            SoundManager.PlayFlipUp();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-
-            pivot.transform.Rotate(Vector3.forward, -90);
-
-            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            RotateBack();
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition(out unvalid))
             {
-                pivot.transform.Rotate(Vector3.forward, 90);
+                if(unvalid=="Left")
+                    root.transform.Translate(Vector3.right);
+                else if(unvalid=="Right")
+                    root.transform.Translate(Vector3.left);
                 return;
             }
-
-            SoundManager.PlayFlipDown();
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
             root.transform.Translate(Vector3.down);
 
-            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition())
+            if (!FindObjectOfType<GameMaster>().CheckIsValidPosition(out unvalid))
             {
                 root.transform.Translate(Vector3.up);
                 return;
@@ -114,6 +116,19 @@ public class Tetrimino : MonoBehaviour
             //UpdateGrid();
         }
     }
+    
+    protected virtual void RotateForward()
+    {
+        pivot.transform.Rotate(Vector3.forward, 90);
+        SoundManager.PlayFlipUp();
+    }
+
+    protected virtual void RotateBack()
+    {
+        pivot.transform.Rotate(Vector3.forward, -90);
+        SoundManager.PlayFlipDown();
+    }
+    
     #endregion
     
     
@@ -126,10 +141,29 @@ public class Tetrimino : MonoBehaviour
     }
 
     //checks if the tetriminos is inside the grid
-
-    public static bool IsInsideBorder(Vector2 pos)
+    
+    public static bool IsInsideBorder(Vector2 pos, out string touchingBorder)
     {
-        return ((int)pos.x >= 0 && (int)pos.x < width && (int)pos.y >= 0);
+        if ((int) pos.x < 0)
+        {
+            touchingBorder = "Left";
+            return false;
+        }
+
+        if ((int) pos.x >= width)
+        {
+            touchingBorder = "Right";
+            return false;
+        }
+
+        if ((int) pos.y < 0)
+        {
+            touchingBorder = "Up";
+            return false;
+        }
+
+        touchingBorder = "";
+        return true;
     }
 
 

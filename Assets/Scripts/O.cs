@@ -15,8 +15,14 @@ public class O : Tetrimino, ITetrimino
         return Type;
     }
 
+    protected override void RotateForward()
+    {
+        return;
+    }
 
-
-
+    protected override void RotateBack()
+    {
+        return;
+    }
 }
 
