@@ -1,59 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ValidationCache Version="1" SchemaVersion="103">
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Wwise Project.wproj" DateLow="1668873800" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Wwise Project.crossover.wsettings" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Triggers\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Switches\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\States\Default Work Unit.wwu" DateLow="1667603418" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\SoundBanks\Default Work Unit.wwu" DateLow="1667679445" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Queries\Factory Queries.wwu" DateLow="1635023056" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Queries\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Presets\Factory Spatial Audio.wwu" DateLow="1635023056" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Presets\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Modulators\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Mixing Sessions\Default Work Unit.wwu" DateLow="1638569130" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Metadata\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Game Parameters\Default Work Unit.wwu" DateLow="1638569130" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Events\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Effects\Factory Effects.wwu" DateLow="1635023056" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Effects\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1635023056" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Conversion Settings\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Audio Devices\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Attenuations\Default Work Unit.wwu" DateLow="1636132646" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1668873370" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Wwise Project.wproj" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Wwise Project.crossover.wsettings" DateLow="1636221408" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Triggers\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Switches\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\States\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1636218396" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\SoundBanks\Default Work Unit.wwu" DateLow="1636218396" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Queries\Factory Queries.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Queries\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Presets\Factory Spatial Audio.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Presets\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Modulators\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Mixing Sessions\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Metadata\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Game Parameters\Default Work Unit.wwu" DateLow="1636218396" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Events\Default Work Unit.wwu" DateLow="1636218396" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Effects\Factory Effects.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Effects\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Conversion Settings\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Audio Devices\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Attenuations\Default Work Unit.wwu" DateLow="1636149705" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GITHUB\Tetris\Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636743847" DateHigh="0"/>
+<ValidationCache Version="1" SchemaVersion="110">
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Wwise Project.wproj" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Wwise Project.crossover.wsettings" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Virtual Acoustics\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Triggers\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Switches\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\States\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\SoundBanks\Default Work Unit.wwu" DateLow="1668874611" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Queries\Factory Queries.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Queries\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Presets\Factory Spatial Audio.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Presets\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Modulators\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Mixing Sessions\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Metadata\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Game Parameters\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Events\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Effects\Factory Effects.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Effects\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Conversion Settings\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Control Surface Sessions\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Audio Devices\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Attenuations\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\GoogleDrive\_CloudSync\Work\USC\GIT\Tetris\Wwise Project\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1668874610" DateHigh="0"/>
 </ValidationCache>

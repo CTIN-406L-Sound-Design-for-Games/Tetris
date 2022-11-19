@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{01DB2FED-1F11-49CE-A76D-DBB371604257}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{01DB2FED-1F11-49CE-A76D-DBB371604257}" SchemaVersion="110">
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{01DB2FED-1F11-49CE-A76D-DBB371604257}" PersistMode="Standalone">
 			<ChildrenList>
@@ -121,7 +121,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{5BD8FC38-532D-40FC-B64E-F24F60ABE124}" ShortID="931914253">
 									<ChildrenList>
@@ -500,7 +499,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{122BE51B-7D97-40CC-9206-DC9DB7336C4B}" ShortID="36072375">
 											<ChildrenList>
@@ -623,7 +621,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{A2C19769-950F-4AE3-B395-0073E47CA697}" ShortID="135877556">
 											<ChildrenList>
@@ -743,7 +740,6 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
-									<ObjectLists/>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{7B1EF7D6-E745-43E1-A7D8-D29FE3CFFDDD}" ShortID="20926110">
 											<ChildrenList>
@@ -772,7 +768,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<ObjectLists/>
 							<ArgumentList>
 								<ArgumentRef Name="stages" ID="{6324B2E3-8858-46F8-BAB5-58351B1DBB6A}"/>
 							</ArgumentList>
@@ -861,7 +856,6 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
-					<ObjectLists/>
 					<ArgumentList>
 						<ArgumentRef Name="game_state" ID="{7D88B836-C9C4-4856-8723-E8BC0447CFF9}"/>
 					</ArgumentList>

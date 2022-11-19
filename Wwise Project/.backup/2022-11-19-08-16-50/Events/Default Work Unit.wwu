@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="shape_flip" ID="{6DD5F201-36F7-4093-B56D-CFEB6A810CDA}">
+					<ChildrenList>
+						<Action Name="" ID="{1276F50F-D467-4794-AFBD-3AD7B5659675}" ShortID="1044393482">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shape_flip" ID="{214061E8-31DD-4055-87A8-F31D5F69EB81}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_land" ID="{3E7D9167-9E7E-4FEF-82B3-76862E4EB53F}">
+					<ChildrenList>
+						<Action Name="" ID="{58888925-4E61-4A61-AE11-36897737A87E}" ShortID="41702424">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shape_land" ID="{FF40CF76-B3B7-4EC3-BC4D-C91C567C3C85}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_left" ID="{982E6035-9B91-48DE-AD09-CC1A4C281A6E}">
+					<ChildrenList>
+						<Action Name="" ID="{F7192105-74AB-4CD3-B8C8-804A5433DFF4}" ShortID="308143537">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shape_left" ID="{45ADD430-629B-4A5F-A3F4-C6032B04CBAA}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="shape_right" ID="{E150FA7B-82C2-414B-A38B-16258C9C1584}">
+					<ChildrenList>
+						<Action Name="" ID="{2801EF17-98FD-4D4A-9DD5-07319BCD2EF9}" ShortID="910211341">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shape_right" ID="{7EF0F947-95E2-4A23-939D-B83FE4000F5D}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="clear_row" ID="{8976E03E-84A7-4067-A115-303864BA0177}">
+					<ChildrenList>
+						<Action Name="" ID="{276020DE-5ED2-4769-80C0-58560085F624}" ShortID="198995297">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clear_row" ID="{E99ADBDB-2B91-40FE-8C8F-5128E5897AD4}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_1" ID="{F77470D4-EB03-4ED9-B86D-18B383194B01}">
+					<ChildrenList>
+						<Action Name="" ID="{B5AA95A6-95D5-47C1-B047-54EBD9D9130E}" ShortID="873860216">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_1" ID="{609ACFF4-1DFF-4F7F-9FDB-E5327F31F0B8}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E1ACDC79-95A9-4391-99D6-0CDB05B6F30B}" ShortID="1053219713">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_1" ID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_2" ID="{BFA9F440-8CED-4E0E-BE92-3F693D4B8A57}">
+					<ChildrenList>
+						<Action Name="" ID="{7CEC9D7C-AF8A-4B40-85D0-A33CF962DBE7}" ShortID="946050238">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_2" ID="{67006B34-AB39-4C92-9AD6-CE40CBAEBF89}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EA4599CD-AA69-40A2-B3DF-C259825A570F}" ShortID="794612805">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_2" ID="{7527AF49-505C-406B-A689-5F35696C09C2}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stage_3" ID="{937CA0A1-07D1-4200-B87B-8607F913669C}">
+					<ChildrenList>
+						<Action Name="" ID="{37BE6E93-7540-48F1-8444-CAD959877BC5}" ShortID="429777967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_3" ID="{9B023E2F-597F-47C6-A479-4E9FD98C21FA}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BD52C0CC-15BA-440D-AF15-432D03916DB3}" ShortID="367491098">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stage_3" ID="{583C4185-0527-49D5-B3F1-96F66DC0C9EA}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_win" ID="{FEEF6A2E-0FFF-4C75-B8E7-1430A5E703AC}">
+					<ChildrenList>
+						<Action Name="" ID="{7C5BA841-93F6-4ABC-B556-D3B2E9A74A70}" ShortID="805315796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="win" ID="{5E01DFB8-D92F-4394-BC6A-CB6617C9D706}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{65B93379-99A4-4258-8001-19A342DBADAF}" ShortID="678392026">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_lose" ID="{A311C9FA-343C-40AC-81C6-C9904201BADB}">
+					<ChildrenList>
+						<Action Name="" ID="{53D564DE-33BF-4434-A91F-1567B1CC026C}" ShortID="883359311">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lose" ID="{955FF771-E801-4081-B840-F1CE6BD9ED46}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{58BB1C48-C5D8-4A3B-917C-92F371EB718D}" ShortID="342634978">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_start" ID="{373DB504-8DB2-499B-871D-16F474907360}">
+					<ChildrenList>
+						<Action Name="" ID="{8F551561-5065-4C38-B1FA-D008289AFC9B}" ShortID="613716227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="game_start" ID="{816FE338-4056-413D-BA1B-E7B6BC17AF1B}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1E5EABEC-7AA3-44CE-A683-014D215E6388}" ShortID="894695219">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_initialize" ID="{95E9B47F-8A53-469C-8AD4-EF15E78FAE26}">
+					<ChildrenList>
+						<Action Name="" ID="{810773BF-0BFF-4638-959B-CE9944A35F6E}" ShortID="113171764">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="game_initialize" ID="{46522BFD-1451-43DF-84A9-50B0FC2B5422}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="game_menu" ID="{D9874834-6D1E-4DED-A2A9-3C24FA1D1D95}">
+					<ChildrenList>
+						<Action Name="" ID="{AB139690-E19C-49AA-9E86-DB41308B229A}" ShortID="839023669">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{4829C550-C43F-4419-8135-CB16F0D2B7C0}" ShortID="374196500">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="game_menu" ID="{7A2406DF-EB57-433C-95AC-2EFE828CBFAF}" WorkUnitID="{6ECBDF93-46BE-4D35-9FA3-E68963636C5A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DAAC3880-DB5F-4C08-BB1A-C10486A566E1}" ShortID="945245759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tetris_Music_Switch" ID="{6ABA6D50-268A-4FDD-9352-D4D2D813168D}" WorkUnitID="{01DB2FED-1F11-49CE-A76D-DBB371604257}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5EA9B1B0-9C86-46C3-8EA2-BA791CD946C5}" ShortID="416724780">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}" WorkUnitID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

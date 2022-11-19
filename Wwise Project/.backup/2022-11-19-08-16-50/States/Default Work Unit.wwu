@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{EAA83475-E2F1-473C-8DC9-BC28B43205F1}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="game_state" ID="{7D88B836-C9C4-4856-8723-E8BC0447CFF9}">
+					<ChildrenList>
+						<State Name="None" ID="{58BA7A27-0900-4AB1-BFCA-A4B8101E6175}"/>
+						<State Name="gameplay" ID="{11C1BCCD-4CE4-4D02-9A91-E5C5195F82CE}"/>
+						<State Name="menu" ID="{14BA22DD-92A8-4276-8CCB-ADE416845272}"/>
+						<State Name="win" ID="{5E01DFB8-D92F-4394-BC6A-CB6617C9D706}"/>
+						<State Name="lose" ID="{955FF771-E801-4081-B840-F1CE6BD9ED46}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="stages" ID="{6324B2E3-8858-46F8-BAB5-58351B1DBB6A}">
+					<ChildrenList>
+						<State Name="None" ID="{2DAF8914-4C1C-4550-A1C8-8F35191BB153}"/>
+						<State Name="stage_1" ID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}"/>
+						<State Name="stage_2" ID="{7527AF49-505C-406B-A689-5F35696C09C2}"/>
+						<State Name="stage_3" ID="{583C4185-0527-49D5-B3F1-96F66DC0C9EA}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

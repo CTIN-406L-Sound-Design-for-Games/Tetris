@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7269BCB8-BD1D-46F9-80C3-F943AC741182}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{7269BCB8-BD1D-46F9-80C3-F943AC741182}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{792D1F28-94BD-4529-AEEB-AC811750564B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="shape_flip" ID="{6DD5F201-36F7-4093-B56D-CFEB6A810CDA}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shape_land" ID="{3E7D9167-9E7E-4FEF-82B3-76862E4EB53F}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shape_left" ID="{982E6035-9B91-48DE-AD09-CC1A4C281A6E}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="shape_right" ID="{E150FA7B-82C2-414B-A38B-16258C9C1584}" WorkUnitID="{EF4D4BFE-6A3B-42B1-AE5E-D63C986C48E6}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="hieght" ID="{46BBF704-4ED4-4A6B-BA98-39B5A2A113A0}"/>
+							<Value>21</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="score" ID="{BB44F545-A0F7-4ECD-8066-8488E1AC549F}"/>
+							<Value>1.08960447028795E-317</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="stage_1" ID="{3A78E167-8D94-4718-B7F5-2C8B5CCDC195}"/>
+						<CurrentStateRef Name="lose" ID="{955FF771-E801-4081-B840-F1CE6BD9ED46}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

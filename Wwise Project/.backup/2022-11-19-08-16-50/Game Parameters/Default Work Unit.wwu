@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{224F5D61-A59B-4F85-A11A-5D15D69932B1}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{224F5D61-A59B-4F85-A11A-5D15D69932B1}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="score" ID="{BB44F545-A0F7-4ECD-8066-8488E1AC549F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="100000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="hieght" ID="{46BBF704-4ED4-4A6B-BA98-39B5A2A113A0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="21"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
