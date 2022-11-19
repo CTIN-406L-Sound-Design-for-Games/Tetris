@@ -10,16 +10,16 @@
 //------------------------------------------------------------------------------
 
 
-public class AkTaskContext : global::System.IDisposable {
+public class MonitorErrorInfo : global::System.IDisposable {
   private global::System.IntPtr swigCPtr;
   protected bool swigCMemOwn;
 
-  internal AkTaskContext(global::System.IntPtr cPtr, bool cMemoryOwn) {
+  internal MonitorErrorInfo(global::System.IntPtr cPtr, bool cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = cPtr;
   }
 
-  internal static global::System.IntPtr getCPtr(AkTaskContext obj) {
+  internal static global::System.IntPtr getCPtr(MonitorErrorInfo obj) {
     return (obj == null) ? global::System.IntPtr.Zero : obj.swigCPtr;
   }
 
@@ -28,7 +28,7 @@ public class AkTaskContext : global::System.IDisposable {
     swigCPtr = cPtr;
   }
 
-  ~AkTaskContext() {
+  ~MonitorErrorInfo() {
     Dispose(false);
   }
 
@@ -42,7 +42,7 @@ public class AkTaskContext : global::System.IDisposable {
       if (swigCPtr != global::System.IntPtr.Zero) {
         if (swigCMemOwn) {
           swigCMemOwn = false;
-          AkSoundEnginePINVOKE.CSharp_delete_AkTaskContext(swigCPtr);
+          AkSoundEnginePINVOKE.CSharp_delete_MonitorErrorInfo(swigCPtr);
         }
         swigCPtr = global::System.IntPtr.Zero;
       }
@@ -50,10 +50,19 @@ public class AkTaskContext : global::System.IDisposable {
     }
   }
 
-  public uint uIdxThread { set { AkSoundEnginePINVOKE.CSharp_AkTaskContext_uIdxThread_set(swigCPtr, value); }  get { return AkSoundEnginePINVOKE.CSharp_AkTaskContext_uIdxThread_get(swigCPtr); } 
+  public MonitorErrorInfo(string in_name, string in_message) : this(AkSoundEnginePINVOKE.CSharp_new_MonitorErrorInfo__SWIG_0(in_name, in_message), true) {
   }
 
-  public AkTaskContext() : this(AkSoundEnginePINVOKE.CSharp_new_AkTaskContext(), true) {
+  public MonitorErrorInfo(string in_name) : this(AkSoundEnginePINVOKE.CSharp_new_MonitorErrorInfo__SWIG_1(in_name), true) {
+  }
+
+  public MonitorErrorInfo() : this(AkSoundEnginePINVOKE.CSharp_new_MonitorErrorInfo__SWIG_2(), true) {
+  }
+
+  public string m_name { set { AkSoundEnginePINVOKE.CSharp_MonitorErrorInfo_m_name_set(swigCPtr, value); }  get { return AkSoundEngine.StringFromIntPtrOSString(AkSoundEnginePINVOKE.CSharp_MonitorErrorInfo_m_name_get(swigCPtr)); } 
+  }
+
+  public string m_message { set { AkSoundEnginePINVOKE.CSharp_MonitorErrorInfo_m_message_set(swigCPtr, value); }  get { return AkSoundEngine.StringFromIntPtrOSString(AkSoundEnginePINVOKE.CSharp_MonitorErrorInfo_m_message_get(swigCPtr)); } 
   }
 
 }
